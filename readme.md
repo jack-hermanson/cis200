@@ -1,0 +1,2 @@
+- BCrypt / password hashing
+- Fetching data using javascript

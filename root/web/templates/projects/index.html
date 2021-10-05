@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock title %}
+
+{% block body %}
+    <p>This is where student projects are.</p>
+{% endblock body %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce() }}">
+    console.log("some javascript here");
+</script>
+{% endblock scripts %}

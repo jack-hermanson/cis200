@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+    <p>Hello world</p>
+{% endblock body %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce() }}">
+    console.log("hi again");
+</script>
+{% endblock scripts %}
