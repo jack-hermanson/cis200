@@ -26,11 +26,12 @@ def create_app(config_class=Config):
         content_security_policy={
             "default-src": [
                 "'self'",
-                "cdn.jsdelivr.net"
+                "cdn.jsdelivr.net",
             ],
             "script-src": [
                 "'self'",
             ],
+            "img-src data:": "unsafe-eval"
         },
         content_security_policy_nonce_in=["script-src"]
     )
