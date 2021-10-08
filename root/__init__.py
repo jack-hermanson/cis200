@@ -25,10 +25,11 @@ def create_app(config_class=Config):
         app,
         content_security_policy={
             "default-src": [
-                "'self'"
+                "'self'",
+                "cdn.jsdelivr.net"
             ],
             "script-src": [
-                "'self'"
+                "'self'",
             ],
         },
         content_security_policy_nonce_in=["script-src"]
