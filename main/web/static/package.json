@@ -1,0 +1,11 @@
+{
+  "name": "static",
+  "description": "The static npm libraries used on our front end.",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "cd main/web/static && npm install"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
