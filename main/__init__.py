@@ -2,7 +2,7 @@ from flask_bcrypt import Bcrypt
 from flask import Flask
 from flask_talisman import Talisman, DEFAULT_CSP_POLICY
 
-from root.config import Config
+from main.config import Config
 
 bcrypt = Bcrypt()
 
@@ -40,10 +40,10 @@ def create_app(config_class=Config):
     bcrypt.init_app(app)
 
     # register blueprints
-    from root.modules.main.routes import main
+    from main.modules.main.routes import main
     app.register_blueprint(main)
 
-    from root.modules.projects.routes import projects
+    from main.modules.projects.routes import projects
     app.register_blueprint(projects)
 
     # return the app
