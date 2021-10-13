@@ -6,3 +6,4 @@
 - Ava Schneider
 - Teagan Smith
 - Ethan Melsheimer
+- Bryan Lezama
