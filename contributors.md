@@ -5,3 +5,4 @@
 - Tammy Li
 - Ava Schneider
 - Teagan Smith
+- Bryan Lezama
