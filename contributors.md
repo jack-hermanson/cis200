@@ -5,6 +5,7 @@
 - Tammy Li
 - Ava Schneider
 - Teagan Smith
+- Galen Hohenegger
 - Hannah Mismas
 - Tim Cawdrey
 - Adam Giniewski
