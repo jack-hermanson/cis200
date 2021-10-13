@@ -5,6 +5,7 @@
 - Tammy Li
 - Ava Schneider
 - Teagan Smith
+- Tim Cawdrey
 - Adam Giniewski
 - Ethan Melsheimer
 - Bryan Lezama
