@@ -5,4 +5,4 @@
 - Tammy Li
 - Ava Schneider
 - Teagan Smith
-Mackenzie Hatchett
+- Mackenzie Hatchett
