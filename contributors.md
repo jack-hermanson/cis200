@@ -6,3 +6,7 @@
 - Ava Schneider
 - Teagan Smith
 - Hannah Mismas
+- Tim Cawdrey
+- Adam Giniewski
+- Ethan Melsheimer
+- Bryan Lezama
