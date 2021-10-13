@@ -6,7 +6,7 @@
 - Ava Schneider
 - Teagan Smith
 - Mackenzie Hatchett
-- jack curry
+- Jack Curry
 - Ashley Slater
 - Galen Hohenegger
 - Hannah Mismas
