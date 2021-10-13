@@ -1,5 +1,6 @@
 # Contributors
 
-- Mahlet Amde
 - Jack Hermanson
+- Mahlet Amde
+- Ava Schneider
 - Teagan Smith
