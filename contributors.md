@@ -6,6 +6,7 @@
 - Ava Schneider
 - Teagan Smith
 - Ashley Slater
+- Galen Hohenegger
 - Hannah Mismas
 - Tim Cawdrey
 - Adam Giniewski
