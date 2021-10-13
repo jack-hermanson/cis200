@@ -5,6 +5,7 @@
 - Tammy Li
 - Ava Schneider
 - Teagan Smith
+- Mackenzie Hatchett
 - jack curry
 - Ashley Slater
 - Galen Hohenegger
