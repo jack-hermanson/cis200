@@ -36,6 +36,16 @@ function fetchExpenditures() {
         return transformApiResponse(rawData);
     });
 }
+function getPartyColor(party) {
+    switch (party) {
+        case "R":
+            return "red";
+        case "D":
+            return "blue";
+        default:
+            return "";
+    }
+}
 let expenditures = undefined;
 (() => __awaiter(this, void 0, void 0, function* () {
     const tableBody = document.getElementById("expenditure-table-body");
@@ -50,12 +60,16 @@ let expenditures = undefined;
         tableBody.innerHTML += `
             <tr>
                 <td>${expenditure.candidate}</td>
-                <td>${expenditure.party}</td>
+                <td>
+                    <span class="badge bg-${getPartyColor(expenditure.party)}">
+                        ${expenditure.party}
+                    </span>
+                </td>
                 <td>${expenditure.district}</td>
                 <td>${expenditure.pacName}</td>
                 <td>${expenditure.payee}</td>
                 <td>${expenditure.supports ? "Support" : "Oppose"}</td>
-                <td>$${expenditure.amount}</td>
+                <td>$${expenditure.amount.toLocaleString()}</td>
                 <td>${expenditure.date.toLocaleDateString()}</td>
             </tr>
         `;

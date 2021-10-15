@@ -61,6 +61,17 @@ async function fetchExpenditures(): Promise<IndependentExpenditure[]> {
     return transformApiResponse(rawData);
 }
 
+function getPartyColor(party: string): string {
+    switch (party) {
+        case "R":
+            return "red";
+        case "D":
+            return "blue";
+        default:
+            return "";
+    }
+}
+
 let expenditures: IndependentExpenditure[] | undefined = undefined;
 
 (async () => {
@@ -77,12 +88,16 @@ let expenditures: IndependentExpenditure[] | undefined = undefined;
         tableBody.innerHTML += `
             <tr>
                 <td>${expenditure.candidate}</td>
-                <td>${expenditure.party}</td>
+                <td>
+                    <span class="badge bg-${getPartyColor(expenditure.party)}">
+                        ${expenditure.party}
+                    </span>
+                </td>
                 <td>${expenditure.district}</td>
                 <td>${expenditure.pacName}</td>
                 <td>${expenditure.payee}</td>
                 <td>${expenditure.supports ? "Support" : "Oppose"}</td>
-                <td>$${expenditure.amount}</td>
+                <td>$${expenditure.amount.toLocaleString()}</td>
                 <td>${expenditure.date.toLocaleDateString()}</td>
             </tr>
         `
