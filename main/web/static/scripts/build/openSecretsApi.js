@@ -36,3 +36,28 @@ function fetchExpenditures() {
         return transformApiResponse(rawData);
     });
 }
+let expenditures = undefined;
+(() => __awaiter(this, void 0, void 0, function* () {
+    const tableBody = document.getElementById("expenditure-table-body");
+    tableBody.innerHTML = `
+        <tr>
+            <td colspan="8">Loading...</td>
+        </tr>
+    `;
+    expenditures = yield fetchExpenditures();
+    tableBody.innerHTML = "";
+    for (let expenditure of expenditures) {
+        tableBody.innerHTML += `
+            <tr>
+                <td>${expenditure.candidate}</td>
+                <td>${expenditure.party}</td>
+                <td>${expenditure.district}</td>
+                <td>${expenditure.pacName}</td>
+                <td>${expenditure.payee}</td>
+                <td>${expenditure.supports ? "Support" : "Oppose"}</td>
+                <td>$${expenditure.amount}</td>
+                <td>${expenditure.date.toLocaleDateString()}</td>
+            </tr>
+        `;
+    }
+}))();

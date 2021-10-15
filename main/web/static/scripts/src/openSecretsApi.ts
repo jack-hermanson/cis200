@@ -60,3 +60,31 @@ async function fetchExpenditures(): Promise<IndependentExpenditure[]> {
     const rawData = await response.json() as ApiResponse;
     return transformApiResponse(rawData);
 }
+
+let expenditures: IndependentExpenditure[] | undefined = undefined;
+
+(async () => {
+    const tableBody = document.getElementById("expenditure-table-body");
+    tableBody.innerHTML = `
+        <tr>
+            <td colspan="8">Loading...</td>
+        </tr>
+    `;
+
+    expenditures = await fetchExpenditures();
+    tableBody.innerHTML = "";
+    for (let expenditure of expenditures) {
+        tableBody.innerHTML += `
+            <tr>
+                <td>${expenditure.candidate}</td>
+                <td>${expenditure.party}</td>
+                <td>${expenditure.district}</td>
+                <td>${expenditure.pacName}</td>
+                <td>${expenditure.payee}</td>
+                <td>${expenditure.supports ? "Support" : "Oppose"}</td>
+                <td>$${expenditure.amount}</td>
+                <td>${expenditure.date.toLocaleDateString()}</td>
+            </tr>
+        `
+    }
+})();

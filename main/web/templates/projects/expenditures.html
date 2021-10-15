@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% set active_page = "projects" %}
+
+{% block title %}Projects | Expenditures{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <p class="lead">Independent expenditures?</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive-lg">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Candidate</th>
+                            <th>Party</th>
+                            <th>District</th>
+                            <th>PAC</th>
+                            <th>Payee</th>
+                            <th>Stance</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody id="expenditure-table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce() }}" src="{{ url_for('static', filename='scripts/build/openSecretsApi.js') }}">
+</script>
+{% endblock scripts %}

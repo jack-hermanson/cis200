@@ -27,6 +27,7 @@ def create_app(config_class=Config):
             "default-src": [
                 "'self'",
                 "cdn.jsdelivr.net",
+                "www.opensecrets.org/"
             ],
             "script-src": [
                 "'self'",
