@@ -1,11 +1,18 @@
 # Contributors
 
-- Mahlet Amde
-<<<<<<< Updated upstream
 - Jack Hermanson
-=======
+- Mahlet Amde
 - Tammy Li
 - Ava Schneider
 - Teagan Smith
->>>>>>> Stashed changes
 - Ethan Fantl
+- Mackenzie Hatchett
+- Jack Curry
+- Ashley Slater
+- Galen Hohenegger
+- Hannah Mismas
+- Tim Cawdrey
+- Adam Giniewski
+- Ethan Melsheimer
+- Bryan Lezama
+- Christina Serrano
