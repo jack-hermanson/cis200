@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 const apiKey = "529a9eed1fd48656f8882366bdb4d71b";
 function getApiUrl() {
-    return `http://www.opensecrets.org/api/?method=independentExpend&apikey=${apiKey}&output=json`;
+    return `https://www.opensecrets.org/api/?method=independentExpend&apikey=${apiKey}&output=json`;
 }
 function transformApiResponse(apiResponse) {
     const expenditures = [];

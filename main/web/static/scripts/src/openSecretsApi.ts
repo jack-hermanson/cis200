@@ -1,7 +1,7 @@
 const apiKey = "529a9eed1fd48656f8882366bdb4d71b";
 
 function getApiUrl(): string {
-    return `http://www.opensecrets.org/api/?method=independentExpend&apikey=${apiKey}&output=json`;
+    return `https://www.opensecrets.org/api/?method=independentExpend&apikey=${apiKey}&output=json`;
 }
 
 interface ApiResponse {
