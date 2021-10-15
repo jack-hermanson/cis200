@@ -2,6 +2,7 @@
 
 - Jack Hermanson
 - Mahlet Amde
+- Brad Kerr
 - Tammy Li
 - Ava Schneider
 - Teagan Smith
