@@ -41,8 +41,8 @@ def create_app(config_class=Config):
     bcrypt.init_app(app)
 
     # register blueprints
-    from main.modules.main.routes import main
-    app.register_blueprint(main)
+    from .modules.about.routes import about
+    app.register_blueprint(about)
 
     from main.modules.projects.routes import projects
     app.register_blueprint(projects)
