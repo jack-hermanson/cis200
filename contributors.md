@@ -2,6 +2,8 @@
 
 - Jack Hermanson
 - Mahlet Amde
+- Jack Hermanson
+- Joseph Maitan
 - Brad Kerr
 - Tammy Li
 - Ava Schneider
