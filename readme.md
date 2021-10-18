@@ -18,7 +18,7 @@ to install because you have to make an educational account to get it for free.
 5. Clone this repository.
 6. Open up a terminal. In the root directory of the project, run the following commands.
 
-Mac:
+First Time on Mac:
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -26,11 +26,23 @@ pip install -r requirements.txt
 python run.py
 ```
 
-Windows:
+After First Time on Mac:
+```bash
+source venv/bin/activate
+python run.py
+```
+
+First Time Windows:
 ```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+py -m venv venv
+.\venv\Scripts\activate
 pip install -r .\requirements.txt
+python run.py
+```
+
+After First Time on Windows:
+```powershell
+.\venv\Scripts\activate
 python run.py
 ```
 
