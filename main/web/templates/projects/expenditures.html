@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% set active_page = "projects" %}
+
+{% block title %}Projects | Expenditures{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Independent Expenditures</h2>
+            <p class="lead">
+                According to the
+                <a target="_blank"
+                   href="https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/understanding-independent-expenditures/">FEC</a>,
+                Independent expenditures "expressly advocate" for the election or defeat of a
+                candidate. Unlike donations from individual people, independent expenditures are <b>not subject to
+                contribution limits</b>, leading to <a
+                    href="http://www.democracymatters.org/money-on-my-mind-2/the-problem-of-independent-expenditures/"
+                    target="_blank">concerns</a> that the rich have a "disproportionate influence over the political
+                process."
+            </p>
+            <p>This data is provided in real time by
+                <a target="_blank" href="https://www.opensecrets.org/">OpenSecrets.org</a>.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="table-responsive-lg">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>Party</th>
+                        <th>District</th>
+                        <th>PAC</th>
+                        <th>Payee</th>
+                        <th>Stance</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                    </thead>
+                    <tbody id="expenditure-table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block scripts %}
+    <script nonce="{{ csp_nonce() }}" src="{{ url_for('static', filename='scripts/build/openSecretsApi.js') }}">
+    </script>
+{% endblock scripts %}
