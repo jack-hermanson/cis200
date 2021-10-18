@@ -9,7 +9,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="{{ url_for('about.index') }}">CIS 200</a>
+            <a class="navbar-brand" href="{{ url_for('main.index') }}">CIS 200</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,7 +20,16 @@
                         <a class="nav-link {% if active_page == 'about' %}active{% endif %}" href="{{ url_for('about.index') }}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'projects' %}active{% endif %}" href="{{ url_for('projects.index') }}">Projects</a>
+                        <a class="nav-link {% if active_page == 'environmental' %}active{% endif %}" href="{{ url_for('environmental.index') }}">Environmental</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'social' %}active{% endif %}" href="{{ url_for('social.index') }}">Social</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'economic' %}active{% endif %}" href="{{ url_for('economic.index') }}">Economic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('contact.index') }}">Contact</a>
                     </li>
                 </ul>
             </div>
