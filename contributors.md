@@ -2,7 +2,6 @@
 
 - Jack Hermanson
 - Mahlet Amde
-- Jack Hermanson
 - Joseph Maitan
 - Brad Kerr
 - Tammy Li
@@ -21,3 +20,4 @@
 - Christina Serrano
 - Andrew Patton
 - Kelsey Clough 
+- Olivia Leath
