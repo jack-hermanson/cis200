@@ -1,10 +1,10 @@
-from flask_bcrypt import Bcrypt
+# from flask_bcrypt import Bcrypt
 from flask import Flask
-from flask_talisman import Talisman, DEFAULT_CSP_POLICY
+from flask_talisman import Talisman
 
 from main.config import Config
 
-bcrypt = Bcrypt()
+# bcrypt = Bcrypt()
 
 
 def create_app(config_class=Config):
@@ -38,14 +38,19 @@ def create_app(config_class=Config):
     )
 
     # set up bcrypt
-    bcrypt.init_app(app)
+    # bcrypt.init_app(app)
 
-    # register blueprints
-    from main.modules.main.routes import main
-    app.register_blueprint(main)
+    # register blueprints/routes
+    from .modules.about.routes import about
+    from .modules.contact.routes import contact
+    from .modules.economic.routes import economic
+    from .modules.environmental.routes import environmental
+    from .modules.main.routes import main
+    from .modules.projects.routes import projects
+    from .modules.social.routes import social
 
-    from main.modules.projects.routes import projects
-    app.register_blueprint(projects)
+    for blueprint in [about, contact, economic, environmental, main, projects, social]:
+        app.register_blueprint(blueprint)
 
     # return the app
     return app
