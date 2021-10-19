@@ -1,5 +1,6 @@
 # Contributors
 
+- Olga Kuzminylh 
 - Jack Hermanson
 - Mahlet Amde
 - Joseph Maitan
