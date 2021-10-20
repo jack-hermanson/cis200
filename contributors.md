@@ -24,3 +24,4 @@
 - Olivia Leath
 - Conner Fowler
 - Olga Kuzminykh 
+- Chaezar Sebring
