@@ -1,6 +1,6 @@
 # Contributors
 
-- Olga Kuzminylh 
+
 - Jack Hermanson
 - Mahlet Amde
 - Joseph Maitan
@@ -23,3 +23,4 @@
 - Kelsey Clough 
 - Olivia Leath
 - Conner Fowler
+- Olga Kuzminykh 
