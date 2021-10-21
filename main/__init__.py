@@ -27,12 +27,15 @@ def create_app(config_class=Config):
             "default-src": [
                 "'self'",
                 "cdn.jsdelivr.net",
-                "www.opensecrets.org/"
+                "www.opensecrets.org/",
             ],
             "script-src": [
                 "'self'",
             ],
-            "img-src data:": "unsafe-eval"
+            "img-src data:": [
+                "unsafe-eval",
+                "https://images.unsplash.com/"
+            ],
         },
         content_security_policy_nonce_in=["script-src"]
     )
@@ -46,10 +49,10 @@ def create_app(config_class=Config):
     from .modules.economic.routes import economic
     from .modules.environmental.routes import environmental
     from .modules.main.routes import main
-    from .modules.projects.routes import projects
+    from .modules.sandbox.routes import sandbox
     from .modules.social.routes import social
 
-    for blueprint in [about, contact, economic, environmental, main, projects, social]:
+    for blueprint in [about, contact, economic, environmental, main, sandbox, social]:
         app.register_blueprint(blueprint)
 
     # return the app
