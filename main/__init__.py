@@ -27,12 +27,15 @@ def create_app(config_class=Config):
             "default-src": [
                 "'self'",
                 "cdn.jsdelivr.net",
-                "www.opensecrets.org/"
+                "www.opensecrets.org/",
             ],
             "script-src": [
                 "'self'",
             ],
-            "img-src data:": "unsafe-eval"
+            "img-src data:": [
+                "unsafe-eval",
+                "https://images.unsplash.com/"
+            ],
         },
         content_security_policy_nonce_in=["script-src"]
     )

@@ -7,13 +7,17 @@
     <div class="row">
         <div class="col-12">
             <h2>IS Team Sandbox</h2>
-            <p class="lead">This is where are are going to practice some HTML skills.</p>
+            <p class="lead">
+                This is where are are going to practice some HTML skills.
+                Find a free API endpoint <a target="_blank" href="https://apipheny.io/free-api/">here</a>.
+            </p>
         </div>
     </div>
     <div class="row">
         <div class="col-12 col-lg-6">
             <div class="list-group">
-                <a class="list-group-item list-group-item-action" href="{{ url_for('sandbox.expenditures') }}">Independent Expenditures</a>
+                <a href="{{ url_for('sandbox.cat_facts') }}" class="list-group-item list-group-item-action">Cat Facts</a>
+                <a href="{{ url_for('sandbox.expenditures') }}" class="list-group-item list-group-item-action">Independent Expenditures</a>
             </div>
         </div>
     </div>
