@@ -46,10 +46,10 @@ def create_app(config_class=Config):
     from .modules.economic.routes import economic
     from .modules.environmental.routes import environmental
     from .modules.main.routes import main
-    from .modules.projects.routes import projects
+    from .modules.sandbox.routes import sandbox
     from .modules.social.routes import social
 
-    for blueprint in [about, contact, economic, environmental, main, projects, social]:
+    for blueprint in [about, contact, economic, environmental, main, sandbox, social]:
         app.register_blueprint(blueprint)
 
     # return the app

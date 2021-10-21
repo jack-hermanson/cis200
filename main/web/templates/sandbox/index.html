@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Sandbox{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>IS Team Sandbox</h2>
+            <p class="lead">This is where are are going to practice some HTML skills.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="list-group">
+                <a class="list-group-item list-group-item-action" href="{{ url_for('sandbox.expenditures') }}">Independent Expenditures</a>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
+
+{% block scripts %}
+<script nonce="{{ csp_nonce() }}">
+    console.log("some javascript here");
+</script>
+{% endblock scripts %}
