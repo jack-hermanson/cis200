@@ -1,8 +1,8 @@
 # Contributors
 
+
 - Jack Hermanson
 - Mahlet Amde
-- Jack Hermanson
 - Joseph Maitan
 - Brad Kerr
 - Tammy Li
@@ -20,4 +20,9 @@
 - Bryan Lezama
 - Christina Serrano
 - Andrew Patton
-- frank pomponio
+- Frank Pomponio
+- Kelsey Clough 
+- Olivia Leath
+- Conner Fowler
+- Olga Kuzminykh 
+- Justin Ginter
