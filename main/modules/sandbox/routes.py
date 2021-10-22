@@ -26,3 +26,10 @@ def expenditures():
 def random_users():
     random_users_data = ApiRequest("https://randomuser.me/api/").make_request()
     return render_template("sandbox/random-users.html", random_user_data = random_users_data)
+  
+
+@sandbox.route("/bored")
+def bored():
+    bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
+    return render_template("sandbox/bored.html",
+        bored_data=bored_data)
