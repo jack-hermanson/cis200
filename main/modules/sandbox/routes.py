@@ -20,3 +20,10 @@ def cat_facts():
 @sandbox.route("/expenditures")
 def expenditures():
     return render_template("sandbox/expenditures.html")
+
+
+@sandbox.route("/bored")
+def bored():
+    bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
+    return bored_data
+    
