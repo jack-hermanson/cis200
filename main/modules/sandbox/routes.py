@@ -25,5 +25,5 @@ def expenditures():
 @sandbox.route("/bored")
 def bored():
     bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
-    return bored_data
+    return render_template("sandbox/bored.html")
     
