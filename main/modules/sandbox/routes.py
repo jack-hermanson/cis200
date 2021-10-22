@@ -20,3 +20,9 @@ def cat_facts():
 @sandbox.route("/expenditures")
 def expenditures():
     return render_template("sandbox/expenditures.html")
+
+
+@sandbox.route("/random-users")
+def random_users():
+    random_users_data = ApiRequest("https://randomuser.me/api/").make_request()
+    return render_template("sandbox/random-users.html");

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Random Users{% endblock title %} 
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Ranodm Users</h2>
+            <p>These are random users</p>
+        </div>
+    </div>
+{% endblock body %}
+
+{# REMOVE THIS BLOCK IF YOU DON'T NEED JAVASCRIPT #}
+{% block scripts %}
+<script nonce="{{ csp_nonce() }}">
+    console.log("javascript");
+</script>
+{% endblock scripts %}
