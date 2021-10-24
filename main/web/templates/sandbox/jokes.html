@@ -10,5 +10,19 @@
             <p>On this page, you can find a joke.</p>
         </div>
     </div>
-    {{ jokes_data }}
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-secondary">
+                {{ jokes_data["setup"] }}
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-danger">
+                {{ jokes_data["delivery"] }}
+            </div>
+        </div>
+    </div>
+    
+    
 {% endblock body %}
