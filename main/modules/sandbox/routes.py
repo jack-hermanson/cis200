@@ -14,7 +14,7 @@ def index():
 def cat_facts():
     cat_data = ApiRequest("https://catfact.ninja/fact").make_request()
     return render_template("sandbox/cat-facts.html",
-                           cat_data=cat_data)
+        cat_data=cat_data)
 
 
 @sandbox.route("/expenditures")
