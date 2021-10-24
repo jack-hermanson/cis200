@@ -33,3 +33,10 @@ def bored():
     bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
     return render_template("sandbox/bored.html",
         bored_data=bored_data)
+
+
+@sandbox.route("/universities")
+def universities():
+    universities_data = ApiRequest("http://universities.hipolabs.com/search?country=United+States").make_request()
+    return render_template("sandbox/universities.html",
+        universities_data=universities_data)
