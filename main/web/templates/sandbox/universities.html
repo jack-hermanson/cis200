@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% set active_page = "universities" %}
+{% set active_page = "sandbox" %}
 
 {% block title %}Universities{% endblock title %}
 
@@ -11,7 +11,12 @@
         </div>
     </div>
     <div class="row">
-    <button type="button" class="btn btn-primary">{{ universities_data[0]["name"]}}</button>
+        <div class="col-12 col-lg-6 mb-3">
+            <button type="button" class="btn btn-primary">{{ universities_data[0]["name"]}}</button>
+        </div>
+        <div class="col-12 col-lg-6 mb-3">
+            <button type="button" class="btn btn-primary">{{ universities_data[1]["name"]}}</button>
+        </div>
     </div>
 {% endblock body %}
 
