@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Random Users{% endblock title %} 
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Random Users</h2>
+            <p>These are random users</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-4 mb-3">
+            <button class="btn btn-success" >{{ random_user_data["results"][0]["name"]["title"] }}</button>
+        </div>
+        <div class="col-12 col-lg-4 mb-3">
+            <button class="btn btn-success" >{{ random_user_data["results"][0]["name"]["first"] }}</button>
+        </div>
+        <div class="col-12 col-lg-4 ">
+            <button class="btn btn-success" >{{ random_user_data["results"][0]["name"]["last"] }}</button>
+        </div>
+    </div>
+{% endblock body %}
+
+{# REMOVE THIS BLOCK IF YOU DON'T NEED JAVASCRIPT #}
+{% block scripts %}
+<script nonce="{{ csp_nonce() }}">
+    console.log("javascript");
+</script>
+{% endblock scripts %}

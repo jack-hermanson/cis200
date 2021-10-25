@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Jokes{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Jokes</h2>
+            <p>On this page, you can find a joke.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-secondary">
+                {{ jokes_data["setup"] }}
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-danger">
+                {{ jokes_data["delivery"] }}
+            </div>
+        </div>
+    </div>
+    
+    
+{% endblock body %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Universities{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Universities</h2>
+            <p>This is a list of universities.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-3">
+            <button type="button" class="btn btn-primary">{{ universities_data[0]["name"]}}</button>
+        </div>
+        <div class="col-12 col-lg-6 mb-3">
+            <button type="button" class="btn btn-primary">{{ universities_data[1]["name"]}}</button>
+        </div>
+    </div>
+{% endblock body %}
+
