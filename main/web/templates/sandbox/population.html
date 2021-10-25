@@ -12,10 +12,14 @@
     </div>
     <div class="row">
         <div class="col-12 col-lg-6 mb-3">
-            
+            <div class="alert alert-info">
+                {{ population_data["data"][0]["Nation"] }}
+            </div>
         </div>
         <div class="col-12 col-lg-6">
-
+            <div class="alert alert-danger">
+                {{ population_data["data"][0]["Population"] }}
+            </div>
         </div>
     </div>
 {% endblock body %}
