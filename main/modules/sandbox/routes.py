@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, jsonify
 
 from main.utils.ApiRequest import ApiRequest
 
@@ -58,3 +58,9 @@ def jokes():
         "sandbox/jokes.html",
         jokes_data=jokes_data
     )
+
+
+@sandbox.route("/population")
+def population():
+    populations_data = ApiRequest("https://datausa.io/api/data?drilldowns=Nation&measures=Population").make_request()
+    return jsonify(populations_data)
