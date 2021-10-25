@@ -25,6 +25,7 @@
 - Olivia Leath
 - Conner Fowler
 - Olga Kuzminykh 
+- Corwin Kaiser
 - Chaezar Sebring
 - Justin Ginter
 - Matt Koob
