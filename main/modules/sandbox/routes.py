@@ -63,4 +63,4 @@ def jokes():
 @sandbox.route("/population")
 def population():
     populations_data = ApiRequest("https://datausa.io/api/data?drilldowns=Nation&measures=Population").make_request()
-    return jsonify(populations_data)
+    return render_template("sandbox/population.html")
