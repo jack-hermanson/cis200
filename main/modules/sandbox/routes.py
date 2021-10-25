@@ -44,6 +44,6 @@ def universities():
 
 @sandbox.route("/jokes")
 def jokes():
-    jokes_data = ApiRequest("https://v2.jokeapi.dev/joke/Any?type=twopart").make_request()
+    jokes_data = ApiRequest("https://v2.jokeapi.dev/joke/Any?type=twopart&blacklistFlags=nsfw,religious,racist,sexist,explicit").make_request()
     return render_template("sandbox/jokes.html",
         jokes_data=jokes_data)
