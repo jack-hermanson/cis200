@@ -58,3 +58,8 @@ def jokes():
         "sandbox/jokes.html",
         jokes_data=jokes_data
     )
+@sandbox.route("/dogs")
+def dogs():
+    dogs_data=ApiRequest("https://images.dog.ceo/breeds/retriever-flatcoated/n02099267_5352.jpg").make_request 
+    return_template("sandbox/dogs.html",
+dogs_data=dogs_data)
