@@ -1,12 +1,20 @@
 {% extends "base.html" %}
-{% set active_page = "about" %} {# CHANGE THIS #}
+{% set active_page = "sandbox" %} {# CHANGE THIS #}
 
-{% block title %}dogs{% endblock title %} 
+{% block title %}Dogs{% endblock title %}
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>dogs</h2> {# CHANGE THIS #}
-            <p>on this page you can find dogs.</p> }
+            <h2>Dogs</h2>
+            <p>On this page you can find dogs.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-3">
+            <img src="{{ dogs_data[0]['message'] }}" />
+        </div>
+        <div class="col-12 col-lg-6">
+            <img src="{{ dogs_data[1]['message'] }}" />
         </div>
     </div>
 {% endblock body %}

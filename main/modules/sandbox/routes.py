@@ -62,8 +62,9 @@ def jokes():
 
 @sandbox.route("/dogs")
 def dogs():
-    dogs_data = ApiRequest("https://images.dog.ceo/breeds/retriever-flatcoated/n02099267_5352.jpg").make_request()
+    dog1 = ApiRequest("https://dog.ceo/api/breed/retriever/images/random").make_request()
+    dog2 = ApiRequest("https://dog.ceo/api/breed/retriever/images/random").make_request()
     return render_template(
         "sandbox/dogs.html",
-        dogs_data=dogs_data
+        dogs_data=[dog1, dog2]
     )
