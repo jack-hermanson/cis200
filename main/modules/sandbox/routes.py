@@ -70,6 +70,7 @@ def tv_shows():
 
 @sandbox.route("/randomdog")
 def randomdog():
-    randomdog_data = ApiRequest("https://random.dog/woof.json").make_request()
+    random_dog_data = ApiRequest("https://random.dog/woof.json").make_request()
     return render_template("sandbox/randomdog.html",
-    randomdog_data = randomdog_data)
+        random_dog_data = random_dog_data)
+    
