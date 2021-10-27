@@ -59,10 +59,11 @@ def jokes():
         jokes_data=jokes_data
     )
 
-@sandbox.route("/TVshows")
-    def jokes():
-        TVshows_data = ApiRequest("http://api.tvmaze.com/search/shows?q=golden girls").make_request()
-        return render_template (
-            "sandbox/TVshows.html",
-            TVshows_data = TVshows data
-        )
+
+@sandbox.route("/tv-shows")
+def tv_shows():
+    tv_shows_data = ApiRequest("https://api.tvmaze.com/search/shows?q=golden%20girls").make_request()
+    return render_template(
+        "sandbox/tv-shows.html",
+        tv_shows_data=tv_shows_data
+    )
