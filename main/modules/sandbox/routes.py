@@ -42,6 +42,13 @@ def bored():
     )
 
 
+    @sandbox.route("/pixel-encounter")
+    def pixel-encounter ():
+        pixel-encoutner_data = ApiRequest("https://app.pixelencounter.com/api/basic/monsters/random").make_request()
+        return render_template("sandbox/pixel-encounter.html", 
+        pixel-encounter_data=pixel-encounter_data)
+
+
 @sandbox.route("/universities")
 def universities():
     universities_data = ApiRequest("http://universities.hipolabs.com/search?country=United+States").make_request()
