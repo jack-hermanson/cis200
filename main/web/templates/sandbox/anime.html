@@ -10,5 +10,14 @@
             <p>On this page, you can view a list of Anime series </p>
         </div>
     </div>
-    {{anime_data}}
-{% endblock body %}
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            {{ anime_data["results"][0]["title"] }}
+        </div>
+        <div class="col-12 col-lg-6">
+            {{ anime_data["results"][2]["title"] }}
+        </div>
+    </div>
+    
+
+    {% endblock body %}

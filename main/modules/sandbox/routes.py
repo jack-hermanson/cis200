@@ -71,5 +71,5 @@ def tv_shows():
 @sandbox.route("/Anime")
 def Anime():
     anime_data = ApiRequest("https://api.jikan.moe/v3/search/anime?q=naruto").make_request()
-    return render_template("sandbox/Anime.html",
+    return render_template("sandbox/anime.html",
     anime_data=anime_data)
