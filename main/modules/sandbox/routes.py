@@ -58,3 +58,10 @@ def jokes():
         "sandbox/jokes.html",
         jokes_data=jokes_data
     )
+@sandbox.route("/xkcd")
+def xkcd():
+    xkcd_data = ApiRequest("https://xkcd.com/info.0.json").make_request()
+    return render_template(
+        "sandbox/jokes.html",
+        xkcd_data=xkcd_data
+    )
