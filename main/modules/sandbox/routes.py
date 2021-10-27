@@ -62,6 +62,6 @@ def jokes():
 def xkcd():
     xkcd_data = ApiRequest("https://xkcd.com/info.0.json").make_request()
     return render_template(
-        "sandbox/jokes.html",
+        "sandbox/xkcd.html",
         xkcd_data=xkcd_data
     )
