@@ -67,3 +67,11 @@ def tv_shows():
         "sandbox/tv-shows.html",
         tv_shows_data=tv_shows_data
     )
+
+@sandbox.route("/facts")
+def facts():
+    facts_data = ApiRequest("https://uselessfacts.jsph.pl/random.html").make_request()
+    return render_template(
+        "sandbox/facts.html",
+        facts_data=facts_data
+    )
