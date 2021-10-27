@@ -67,3 +67,11 @@ def tv_shows():
         "sandbox/tv-shows.html",
         tv_shows_data=tv_shows_data
     )
+
+@sandbox.route("/Nationality")
+def nationality():
+    nationality_data = ApiRequest("https://api.nationalize.io/?name=michael").make_request()
+    return render_template(
+        "sandbox/nationality.html",
+        nationality_data=nationality_data
+    )
