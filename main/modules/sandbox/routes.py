@@ -72,5 +72,7 @@ def tv_shows():
 @sandbox.route("/kitten")
 def kitten():
     kitten_data = ApiRequest("https://api.thecatapi.com/v1/images/search").make_request()
-    return render_template("sandbox/kitten.html", 
-    kitten_data = kitten_data)
+    return render_template(
+        "sandbox/kitten.html", 
+        kitten_data = kitten_data
+    )

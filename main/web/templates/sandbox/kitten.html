@@ -1,14 +1,38 @@
 {% extends "base.html" %}
-{% set active_page = "sandbox" %} 
+{% set active_page = "sandbox" %}
 
-{% block title %}Kitten{% endblock title %} 
+{% block title %}Kitten{% endblock title %}
 
 {% block body %}
-    <div class="row">
-        <div class="col-12">
-            <h2>Kitten</h2> 
-            <p>On this page, you can find kittens.</p> 
+<div class="row">
+    <div class="col-12">
+        <h2>Kitten</h2>
+        <p>On this page, you can find kittens.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <div class="card">
+            <img src="{{ kitten_data[0]["url"] }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
         </div>
     </div>
-    {{ kitten_data }}
+    <div class="col-12 col-lg-6">
+        <div class="card">
+            <img src="{{ kitten_data[0]["url"] }}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock body %}
