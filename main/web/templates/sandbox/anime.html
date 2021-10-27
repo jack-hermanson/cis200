@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Anime{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Anime</h2>
+            <p>On this page, you can view a list of Anime series </p>
+        </div>
+    </div>
+    {{anime_data}}
+{% endblock body %}
