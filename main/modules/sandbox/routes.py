@@ -68,8 +68,8 @@ def tv_shows():
         tv_shows_data=tv_shows_data
     )
 
-@sandbox.route("/Anime")
-def Anime():
+@sandbox.route("/anime")
+def anime():
     anime_data = ApiRequest("https://api.jikan.moe/v3/search/anime?q=naruto").make_request()
     return render_template("sandbox/anime.html",
     anime_data=anime_data)
