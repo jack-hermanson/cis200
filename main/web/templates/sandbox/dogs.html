@@ -19,4 +19,43 @@
     </div>
 {% endblock body %}
 
+python <run class="py"></run>
+control+c
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Sandbox{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>IS Team Sandbox</h2>
+            <p class="lead">
+                This is where are are going to practice some HTML skills.
+                Find a free API endpoint <a target="_blank" href="https://apipheny.io/free-api/">here</a> or
+                <a href="https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/" target="_blank">here</a>.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="list-group">
+                <a href="{{ url_for('sandbox.cat_facts') }}" class="list-group-item list-group-item-action">Cat
+                    Facts</a>
+                <a href="{{ url_for('sandbox.expenditures') }}" class="list-group-item list-group-item-action">Independent
+                    Expenditures</a>
+                <a href="{{ url_for('sandbox.random_users') }}" class="list-group-item list-group-item-action">Random Users</a>
+                <a href="{{ url_for('sandbox.bored') }}" class="list-group-item list-group-item-action">Bored</a>
+                <a href="{{ url_for('sandbox.universities') }}" class="list-group-item list-group-item-action">Universities</a>
+                <a href="{{ url_for('sandbox.jokes') }}" class="list-group-item list-group-item-action">Jokes</a>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block scripts %}
+    <script nonce="{{ csp_nonce() }}">
+        console.log("some javascript here");
+    </script>
+{% endblock scripts %}
 
