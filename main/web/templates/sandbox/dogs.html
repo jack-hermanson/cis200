@@ -11,59 +11,29 @@
     </div>
     <div class="row">
         <div class="col-12 col-lg-6 mb-3">
-            <div class="card" style="width: 18rem;">
-                <img src=""{{ dogs_data[0]['message'] }}"" class="card-img-top" alt="...">
+            <div class="card">
+                <img src= "{{ dogs_data[0]['message'] }}" class="card-img-top">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <h5 class="card-title">dog 1
+                  </h5>
+                  <p class="card-text">this dog some times looks like .</p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
-            <img src= /
+           
         </div>
         <div class="col-12 col-lg-6">
-            <img src="{{ dogs_data[1]['message'] }}" />
+            <div class="card">
+                <img src= "{{ dogs_data[1]['message'] }}" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">dog 2
+                  </h5>
+                  <p class="card-text">this other dog here.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+             />
         </div>
     </div>
 {% endblock body %}
-
-python <run class="py"></run>
-control+c
-{% extends "base.html" %}
-{% set active_page = "sandbox" %}
-
-{% block title %}Sandbox{% endblock title %}
-
-{% block body %}
-    <div class="row">
-        <div class="col-12">
-            <h2>IS Team Sandbox</h2>
-            <p class="lead">
-                This is where are are going to practice some HTML skills.
-                Find a free API endpoint <a target="_blank" href="https://apipheny.io/free-api/">here</a> or
-                <a href="https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/" target="_blank">here</a>.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-lg-6">
-            <div class="list-group">
-                <a href="{{ url_for('sandbox.cat_facts') }}" class="list-group-item list-group-item-action">Cat
-                    Facts</a>
-                <a href="{{ url_for('sandbox.expenditures') }}" class="list-group-item list-group-item-action">Independent
-                    Expenditures</a>
-                <a href="{{ url_for('sandbox.random_users') }}" class="list-group-item list-group-item-action">Random Users</a>
-                <a href="{{ url_for('sandbox.bored') }}" class="list-group-item list-group-item-action">Bored</a>
-                <a href="{{ url_for('sandbox.universities') }}" class="list-group-item list-group-item-action">Universities</a>
-                <a href="{{ url_for('sandbox.jokes') }}" class="list-group-item list-group-item-action">Jokes</a>
-            </div>
-        </div>
-    </div>
-{% endblock body %}
-
-{% block scripts %}
-    <script nonce="{{ csp_nonce() }}">
-        console.log("some javascript here");
-    </script>
-{% endblock scripts %}
 
