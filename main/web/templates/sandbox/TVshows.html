@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %} 
+
+{% block title %}TV shows{% endblock title %} 
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>TV shows</h2> 
+            <p>On this page there is information about different TV shows.</p> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col0lg-6">
+            <div class="alert alert-secondary">
+                {{TVshows_data ["name"]}}
+            </div>
+        </div>
+        <div class="com-12 col-lg-6">
+            <div class="alert alert-danger">
+                {{TVshows_data ["type"]}}
+            </div>
+        </div>
+    </div>
+    
+    
+{% endblock body %}
+
