@@ -67,3 +67,10 @@ def tv_shows():
         "sandbox/tv-shows.html",
         tv_shows_data=tv_shows_data
     )
+
+
+@sandbox.route("/kitten")
+def kitten():
+    kitten_data = ApiRequest("http://placekitten.com/200/300").make_request()
+    return render_template("sandbox/kitten.html", 
+    kitten_data = kitten_data)
