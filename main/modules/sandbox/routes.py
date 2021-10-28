@@ -68,6 +68,15 @@ def tv_shows():
         tv_shows_data=tv_shows_data
     )
 
+@sandbox.route("/kitten")
+def kitten():
+    kitten_data = ApiRequest("https://api.thecatapi.com/v1/images/search").make_request()
+    return render_template(
+        "sandbox/kitten.html", 
+        kitten_data = kitten_data
+    )
+
+  
 @sandbox.route("/anime")
 def anime():
     anime_data = ApiRequest("https://api.jikan.moe/v3/search/anime?q=naruto").make_request()
