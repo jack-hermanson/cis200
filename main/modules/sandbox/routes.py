@@ -60,6 +60,16 @@ def jokes():
     )
 
 
+@sandbox.route("/dogs")
+def dogs():
+    dog1 = ApiRequest("https://dog.ceo/api/breed/retriever/images/random").make_request()
+    dog2 = ApiRequest("https://dog.ceo/api/breed/retriever/images/random").make_request()
+    return render_template(
+        "sandbox/dogs.html",
+        dogs_data=[dog1, dog2]
+    )
+
+
 @sandbox.route("/xkcd")
 def xkcd():
     xkcd_data = ApiRequest("https://xkcd.com/info.0.json").make_request()
@@ -103,4 +113,3 @@ def anime():
         "sandbox/anime.html",
         anime_data=anime_data
     )
-
