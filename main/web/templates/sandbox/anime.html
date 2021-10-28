@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Anime{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Anime</h2>
+            <p>On this page, you can view a list of Anime series </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <span class="badge bg-warning">
+                {{ anime_data["results"][0]["title"] }}
+            </span>
+        </div>
+        <div class="col-12 col-lg-6">
+            <span class="badge bg-danger">{{ anime_data["results"][2]["title"] }}</span>
+        </div>
+    </div>
+    
+
+    {% endblock body %}
