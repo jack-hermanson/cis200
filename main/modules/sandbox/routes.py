@@ -68,6 +68,7 @@ def tv_shows():
         tv_shows_data=tv_shows_data
     )
 
+
 @sandbox.route("/facts")
 def facts():
     facts_data = ApiRequest("https://uselessfacts.jsph.pl/random.json?language=en").make_request()
@@ -75,3 +76,22 @@ def facts():
         "sandbox/facts.html",
         facts_data=facts_data
     )
+
+  
+@sandbox.route("/kitten")
+def kitten():
+    kitten_data = ApiRequest("https://api.thecatapi.com/v1/images/search").make_request()
+    return render_template(
+        "sandbox/kitten.html", 
+        kitten_data = kitten_data
+    )
+
+  
+@sandbox.route("/anime")
+def anime():
+    anime_data = ApiRequest("https://api.jikan.moe/v3/search/anime?q=naruto").make_request()
+    return render_template(
+        "sandbox/anime.html",
+        anime_data=anime_data
+    )
+
