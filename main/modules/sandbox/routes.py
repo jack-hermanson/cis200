@@ -58,6 +58,8 @@ def jokes():
         "sandbox/jokes.html",
         jokes_data=jokes_data
     )
+
+
 @sandbox.route("/xkcd")
 def xkcd():
     xkcd_data = ApiRequest("https://xkcd.com/info.0.json").make_request()
@@ -65,6 +67,8 @@ def xkcd():
         "sandbox/xkcd.html",
         xkcd_data=xkcd_data
     )
+
+
 @sandbox.route("/tv-shows")
 def tv_shows():
     tv_shows_data = ApiRequest("https://api.tvmaze.com/search/shows?q=golden%20girls").make_request()
