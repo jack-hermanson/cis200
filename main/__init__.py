@@ -35,7 +35,9 @@ def create_app(config_class=Config):
             "img-src data:": [
                 "unsafe-eval",
                 "https://images.unsplash.com/",
-                "https://images.dog.ceo"
+                "https://images.dog.ceo",
+                "https://imgs.xkcd.com/",
+                "https://cdn2.thecatapi.com",
             ],
         },
         content_security_policy_nonce_in=["script-src"]
