@@ -6,4 +6,4 @@ advisory = Blueprint("advisory", __name__, url_prefix="/advisory")
 
 @advisory.route("/")
 def index():
-    return "advisory"
+    return render_template("advisory/index.html")
