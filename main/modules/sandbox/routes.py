@@ -45,6 +45,10 @@ def bored():
 @sandbox.route("/universities")
 def universities():
     universities_data = ApiRequest("http://universities.hipolabs.com/search?country=United+States").make_request()
+    for university in universities_data:
+        name = university["name"]
+        country = university["country"]
+        domain = university["domains"][0]
     return render_template(
         "sandbox/universities.html",
         universities_data=universities_data
