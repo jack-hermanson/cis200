@@ -117,3 +117,13 @@ def anime():
         "sandbox/anime.html",
         anime_data=anime_data
     )
+
+@sandbox.route ("/coindesk")
+def coindesk():
+    coindesk_data = ApiRequest ("https://api.coindesk.com/v1/bpi/currentprice.json").make_request ()
+    return render_template (
+        "sandbox/coindesk.html",
+        coindesk_data=coindesk_data
+    )
+
+    
