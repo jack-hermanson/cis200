@@ -54,8 +54,9 @@ def create_app(config_class=Config):
     from .modules.main.routes import main
     from .modules.sandbox.routes import sandbox
     from .modules.social.routes import social
+    from .modules.advisory.routes import advisory
 
-    for blueprint in [about, contact, economic, environmental, main, sandbox, social]:
+    for blueprint in [about, contact, economic, environmental, main, sandbox, social, advisory]:
         app.register_blueprint(blueprint)
 
     # return the app
