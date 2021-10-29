@@ -34,6 +34,9 @@
                     <li class="nav-item">
                         <a class="nav-link {% if active_page == 'sandbox' %}active{% endif %}" href="{{ url_for('sandbox.index') }}">Sandbox</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if active_page == 'advisory' %}active{% endif %}" href="{{ url_for('advisory.index') }}">Advisory</a>
+                    </li>
                 </ul>
             </div>
         </div>
