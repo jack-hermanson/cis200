@@ -1,22 +1,13 @@
 {% extends "base.html" %}
-{% set active_page = "sandbox" %}
+{% set active_page = "coindesk" %} 
 
-% block title %
-<Coindesk></Coindesk>{% endblock title %}
+{% block title %}Coindesk{% endblock title %} 
 
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>Coindesk</h2>
-            <p>On this page you find coindesk.</p>
+            <h2>Coindesk</h2> 
+            <p>See coindesk here</p> 
         </div>
     </div>
 {% endblock body %}
-
-@sandbox.route("/coindesk")
-def coindesk ():
-coindesk_data = ApiRequest ("https://api.coindesk.com/v1/bpi/currentprice.json").make_request ()
-return render_template ("sandbox/coindesk.html"),
-coindesk_data = coindesk_data)
-{{coindesk_data}}
-
