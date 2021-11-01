@@ -10,5 +10,10 @@
             <p>On this page you can find someones nationality,based on their name.</p> 
         </div>
     </div>
-{{nationality_data}}
-    {% endblock body %}
+    <div class="row">
+        <div class="col-12">
+            {{ nationality_data["country"][0]["country_id"] }}
+            {{ nationality_data["country"][0]["probability"] }}
+        </div>
+    </div>
+{% endblock body %}
