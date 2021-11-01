@@ -117,3 +117,10 @@ def anime():
         "sandbox/anime.html",
         anime_data=anime_data
     )
+
+
+@sandbox.route("Kitten-Pictures")
+def Kitten-Pictures():
+    kittenpic_data = ApiRequest("http://placekitten.com/200/300").make_request()
+    return render_template("sandbox/Kitten-Pictures.html,
+    kittenpic_data=kittenpic_data")
