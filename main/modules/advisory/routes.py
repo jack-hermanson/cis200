@@ -9,4 +9,6 @@ def index():
     return render_template("advisory/index.html")
 
 
-@advisory.route{"/project-managers"}
+@advisory.route("/project-management")
+def project_management():
+    pass
