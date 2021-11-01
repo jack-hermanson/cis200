@@ -11,4 +11,4 @@ def index():
 
 @advisory.route("/project-management")
 def project_management():
-    pass
+    return render_template("advisory/project-management.html")
