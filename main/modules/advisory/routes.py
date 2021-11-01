@@ -10,4 +10,4 @@ def index():
 
 @advisory.route("/marketing")
 def marketing():
-    return render_template("advisory/martketing.html")
+    return render_template("advisory/marketing.html")
