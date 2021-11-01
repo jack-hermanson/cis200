@@ -45,6 +45,10 @@ def bored():
 @sandbox.route("/universities")
 def universities():
     universities_data = ApiRequest("http://universities.hipolabs.com/search?country=United+States").make_request()
+    for university in universities_data:
+        name = university["name"]
+        country = university["country"]
+        domain = university["domains"][0]
     return render_template(
         "sandbox/universities.html",
         universities_data=universities_data
@@ -60,6 +64,25 @@ def jokes():
     )
 
 
+@sandbox.route("/dogs")
+def dogs():
+    dog1 = ApiRequest("https://dog.ceo/api/breed/retriever/images/random").make_request()
+    dog2 = ApiRequest("https://dog.ceo/api/breed/retriever/images/random").make_request()
+    return render_template(
+        "sandbox/dogs.html",
+        dogs_data=[dog1, dog2]
+    )
+
+
+@sandbox.route("/xkcd")
+def xkcd():
+    xkcd_data = ApiRequest("https://xkcd.com/info.0.json").make_request()
+    return render_template(
+        "sandbox/xkcd.html",
+        xkcd_data=xkcd_data
+    )
+
+
 @sandbox.route("/tv-shows")
 def tv_shows():
     tv_shows_data = ApiRequest("https://api.tvmaze.com/search/shows?q=golden%20girls").make_request()
@@ -68,10 +91,37 @@ def tv_shows():
         tv_shows_data=tv_shows_data
     )
 
-@sandbox.route("/Nationality")
+
+@sandbox.route("/nationality")
 def nationality():
     nationality_data = ApiRequest("https://api.nationalize.io/?name=michael").make_request()
     return render_template(
         "sandbox/nationality.html",
         nationality_data=nationality_data
+    )
+
+@sandbox.route("/facts")
+def facts():
+    facts_data = ApiRequest("https://uselessfacts.jsph.pl/random.json?language=en").make_request()
+    return render_template(
+        "sandbox/facts.html",
+        facts_data=facts_data
+    )
+
+  
+@sandbox.route("/kitten")
+def kitten():
+    kitten_data = ApiRequest("https://api.thecatapi.com/v1/images/search").make_request()
+    return render_template(
+        "sandbox/kitten.html", 
+        kitten_data = kitten_data
+    )
+
+  
+@sandbox.route("/anime")
+def anime():
+    anime_data = ApiRequest("https://api.jikan.moe/v3/search/anime?q=naruto").make_request()
+    return render_template(
+        "sandbox/anime.html",
+        anime_data=anime_data
     )
