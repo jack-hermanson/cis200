@@ -117,3 +117,12 @@ def anime():
         "sandbox/anime.html",
         anime_data=anime_data
     )
+
+
+@sandbox.route("/holidays")
+def holidays():
+    holidays_data = ApiRequest("https://date.nager.at/api/v2/publicholidays/2020/US").make_request()
+    return render_template(
+        "sandbox/holidays.html",
+        holidays_data=holidays_data
+    )
