@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% set active_page = "about" %} {# CHANGE THIS #}
+{% set active_page = "Advisory" %}
 
 {% block title %}About{% endblock title %} {# CHANGE THIS #}
 
@@ -11,10 +11,3 @@
         </div>
     </div>
 {% endblock body %}
-
-{# REMOVE THIS BLOCK IF YOU DON'T NEED JAVASCRIPT #}
-{% block scripts %}
-<script nonce="{{ csp_nonce() }}">
-    console.log("javascript");
-</script>
-{% endblock scripts %}
