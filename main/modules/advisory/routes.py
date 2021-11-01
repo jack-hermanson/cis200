@@ -8,6 +8,6 @@ advisory = Blueprint("advisory", __name__, url_prefix="/advisory")
 def index():
     return render_template("advisory/index.html")
 
-@advisory.route("/")
+@advisory.route("/marketing")
 def marketing():
     return render_template("advisory/martketing.html")
