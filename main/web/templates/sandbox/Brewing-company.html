@@ -6,8 +6,21 @@
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>Brewing Company</h2> {# CHANGE THIS #}
-            <p>On this page, you can view a Brewing company</p> {# CHANGE THIS #}
+            <h2>Brewing Company</h2> 
+            <p>On this page, you can view a Brewing company</p> 
         </div>
     </div>
+
+    <div class="row">
+        <div class = ".col-12.col-lg-6.mb-3">
+            {{Brewing_Company_data[]}}
+        </div>
+        <div class = ".col-12.col-lg-6">
+            {{Brewing_Company_data[]}}
+        </div>
+    </div>
+
+
+    
+    
 {% endblock body %}
