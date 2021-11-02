@@ -9,6 +9,11 @@ def index():
     return render_template("advisory/index.html")
 
 
+@advisory.route("/project-management")
+def project_management():
+    return render_template("advisory/project-management.html")
+
+  
 @advisory.route("/marketing")
 def marketing():
     return render_template("advisory/marketing.html")
@@ -17,3 +22,4 @@ def marketing():
 @advisory.route("/hr")
 def hr():
     return render_template("advisory/hr.html")
+
