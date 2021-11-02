@@ -118,12 +118,11 @@ def anime():
         anime_data=anime_data
     )
 
-@sandbox.route ("/coindesk")
-def coindesk():
-    coindesk_data = ApiRequest ("https://www.boredapi.com/api/activity").make_request ()
-    return render_template (
-        "sandbox/coindesk.html",
-        coindesk_data=coindesk_data
-    )
 
-    
+@sandbox.route("/bored-2")
+def bored2():
+    bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
+    return render_template(
+        "sandbox/bored-2.html",
+        bored_data=bored_data
+    )
