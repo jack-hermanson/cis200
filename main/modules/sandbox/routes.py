@@ -57,7 +57,8 @@ def universities():
 
 @sandbox.route("/jokes")
 def jokes():
-    jokes_data = ApiRequest("https://v2.jokeapi.dev/joke/Any?type=twopart&blacklistFlags=nsfw,religious,racist,sexist,explicit").make_request()
+    jokes_data = ApiRequest(
+        "https://v2.jokeapi.dev/joke/Any?type=twopart&blacklistFlags=nsfw,religious,racist,sexist,explicit").make_request()
     return render_template(
         "sandbox/jokes.html",
         jokes_data=jokes_data
@@ -92,6 +93,14 @@ def tv_shows():
     )
 
 
+@sandbox.route("/random-dog")
+def random_dog():
+    random_dog_data = ApiRequest("https://random.dog/woof.json").make_request()
+    return render_template(
+        "sandbox/random-dog.html",
+        random_dog_data=random_dog_data
+    )
+      
 @sandbox.route("/facts")
 def facts():
     facts_data = ApiRequest("https://uselessfacts.jsph.pl/random.json?language=en").make_request()
@@ -116,4 +125,13 @@ def anime():
     return render_template(
         "sandbox/anime.html",
         anime_data=anime_data
+    )
+
+
+@sandbox.route("/bored-2")
+def bored2():
+    bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
+    return render_template(
+        "sandbox/bored-2.html",
+        bored_data=bored_data
     )
