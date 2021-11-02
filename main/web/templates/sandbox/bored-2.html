@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Bored 2{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Bored 2</h2>
+            <p>See an activity to do while you're bored here.</p>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-12 col-lg-6">
+        <div class="alert alert-primary" role="alert">
+            {{ bored_data["activity"] }}
+        </div>
+    </div>
+{% endblock body %}
