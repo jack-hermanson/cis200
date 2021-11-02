@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %} {# CHANGE THIS #}
+
+{% block title %}Dogs{% endblock title %}
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Dogs</h2>
+            <p>On this page you can find dogs.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-3">
+            <div class="card">
+                <img src= "{{ dogs_data[0]['message'] }}" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">dog 1
+                  </h5>
+                  <p class="card-text">this dog some times looks like .</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+           
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="card">
+                <img src= "{{ dogs_data[1]['message'] }}" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">dog 2
+                  </h5>
+                  <p class="card-text">this other dog here.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+             />
+        </div>
+    </div>
+{% endblock body %}
+
