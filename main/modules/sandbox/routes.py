@@ -53,7 +53,8 @@ def universities():
 
 @sandbox.route("/jokes")
 def jokes():
-    jokes_data = ApiRequest("https://v2.jokeapi.dev/joke/Any?type=twopart&blacklistFlags=nsfw,religious,racist,sexist,explicit").make_request()
+    jokes_data = ApiRequest(
+        "https://v2.jokeapi.dev/joke/Any?type=twopart&blacklistFlags=nsfw,religious,racist,sexist,explicit").make_request()
     return render_template(
         "sandbox/jokes.html",
         jokes_data=jokes_data
@@ -68,9 +69,11 @@ def tv_shows():
         tv_shows_data=tv_shows_data
     )
 
-@sandbox.route("/randomdog")
-def randomdog():
+
+@sandbox.route("/random-dog")
+def random_dog():
     random_dog_data = ApiRequest("https://random.dog/woof.json").make_request()
-    return render_template("sandbox/randomdog.html",
-        random_dog_data = random_dog_data)
-    
+    return render_template(
+        "sandbox/random-dog.html",
+        random_dog_data=random_dog_data
+    )
