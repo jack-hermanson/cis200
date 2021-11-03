@@ -1,20 +1,14 @@
 {% extends "base.html" %}
-{% set active_page = "about" %} {# CHANGE THIS #}
+{% set active_page = "livestock-sustainability" %} 
 
-{% block title %}About{% endblock title %} {# CHANGE THIS #}
+{% block title %}Livestock Sustainability{% endblock title %} 
 
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>About</h2> {# CHANGE THIS #}
-            <p>This is the about page.</p> {# CHANGE THIS #}
+            <h2>Livestock Sustainability</h2> 
+            <p>This is the livestock sustainability page.</p> {# CHANGE THIS #}
         </div>
     </div>
 {% endblock body %}
 
-{# REMOVE THIS BLOCK IF YOU DON'T NEED JAVASCRIPT #}
-{% block scripts %}
-<script nonce="{{ csp_nonce() }}">
-    console.log("javascript");
-</script>
-{% endblock scripts %}
