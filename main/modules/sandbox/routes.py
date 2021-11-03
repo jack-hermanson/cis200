@@ -135,3 +135,12 @@ def bored2():
         "sandbox/bored-2.html",
         bored_data=bored_data
     )
+
+
+@sandbox.route("/brewing-company")
+def brewing_company():
+    brewing_company_data = ApiRequest("https://api.openbrewerydb.org/breweries").make_request()
+    return render_template(
+        "sandbox/brewing-company.html",
+        brewing_company_data=brewing_company_data
+    )
