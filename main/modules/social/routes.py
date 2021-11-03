@@ -23,3 +23,7 @@ def scamming():
 def worksite_wellness():
     return render_template("social/worksite-wellness.html")
 
+
+@social.route("/homelessness-in-colorado")
+def homelessness_in_colorado():
+    return render_template("social/homelessness-in-colorado.html")
