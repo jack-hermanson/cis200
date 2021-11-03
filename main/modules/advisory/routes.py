@@ -23,7 +23,7 @@ def project_management():
 def marketing():
     return render_template("advisory/marketing.html")
 
-  
+
 @advisory.route("/hr")
 def hr():
     return render_template("advisory/hr.html")
