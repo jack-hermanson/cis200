@@ -1,11 +1,16 @@
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 body {
   .main-container {
     margin-top: 20px;
     margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    min-height: 80vh;
   }
+  background-color: #cad2c5;
 }
 
 .bg-red {

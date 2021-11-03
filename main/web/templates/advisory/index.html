@@ -10,5 +10,19 @@
             <p>Advisory team pages can be found here.</p>
         </div>
     </div>
+    
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="list-group">
+                <a href="{{ url_for('advisory.project_management') }}" class="list-group-item list-group-item-action">Project Management</a>
+                <a href="{{ url_for('advisory.is_team') }}" class="list-group-item list-group-item-action">Information Systems</a>
+                <a href="{{ url_for('advisory.marketing') }}" class="list-group-item list-group-item-action">Marketing</a>
+                <a href="#" class="list-group-item list-group-item-action">Learning Support</a>
+                <a href="{{ url_for('advisory.hr') }}" class="list-group-item list-group-item-action">Human Resources</a>
+            </div>
+        </div>
+    </div>
+
+
 {% endblock body %}
 
