@@ -8,3 +8,7 @@ environmental = Blueprint("environmental", __name__, url_prefix="/environmental"
 def index():
     return render_template("environmental/index.html")
 
+
+@environmental.route("/agriculture-and-water")
+def agriculture_and_water():
+    return render_template("environmental/agriculture-and-water")
