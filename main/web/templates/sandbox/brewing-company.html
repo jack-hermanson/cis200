@@ -1,13 +1,13 @@
 {% extends "base.html" %}
-{% set active_page = "sandbox" %} 
+{% set active_page = "sandbox" %}
 
-{% block title %}Brewing Company{% endblock title %} 
+{% block title %}Brewing Company{% endblock title %}
 
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>Brewing Company</h2> 
-            <p>On this page, you can view 10 barrel brewing company!</p> 
+            <h2>Brewing Company</h2>
+            <p>On this page, you can view 10 barrel brewing company!</p>
         </div>
     </div>
 
@@ -16,17 +16,11 @@
             <div class="alert alert secondary">
                 {{brewing_company_data["name"]}}, {{brewing_company_data["city"] }}
             </div>
-            
         </div>
         <div class = "col-12 col-lg-6">
             <div class="alert alert-danger">
                 {{brewing_company_data["state"]}}
             </div>
-            
         </div>
     </div>
-
-
-    
-    
 {% endblock body %}
