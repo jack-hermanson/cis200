@@ -9,5 +9,5 @@ def index():
     return render_template("environmental/index.html")
 
 @environmental.route("/sustainable-restaurants")
-def hr():
-    return render_template("environmental/sustainable-restaurants.html")
+def sustainable_restaurants():
+    return render_template("environmental/sustainable_restaurants.html")
