@@ -12,3 +12,9 @@ def index():
 @environmental.route("/agriculture-and-water")
 def agriculture_and_water():
     return render_template("environmental/agriculture-and-water.html")
+
+
+@environmental.route("/sustainable-restaurants")
+def sustainable_restaurants():
+    return render_template("environmental/sustainable_restaurants.html")
+

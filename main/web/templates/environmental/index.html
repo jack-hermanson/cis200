@@ -15,15 +15,8 @@
         <div class="col-12 col-lg-6">
             <div class="list-group">
                 <a href="{{ url_for('environmental.agriculture_and_water') }}" class="list-group-item list-group-item-action">Agriculture and Water</a>
+                <a href="{{ url_for('environmental.sustainable_restaurants') }}" class="list-group-item list-group-item-action">Sustainable Restaurants</a>
             </div>
         </div>
     </div>
-   
-
 {% endblock body %}
-
-{% block scripts %}
-<script nonce="{{ csp_nonce() }}">
-    console.log("javascript");
-</script>
-{% endblock scripts %}
