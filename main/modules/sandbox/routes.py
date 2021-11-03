@@ -128,6 +128,15 @@ def anime():
     )
 
 
+@sandbox.route("/IP")
+def IP():
+    ip_data = ApiRequest("https://api.ipify.org/?format=json").make_request()
+    return render_template(
+        "sandbox/IP.html",
+        ip_data=ip_data
+    )
+  
+  
 @sandbox.route("/bored-2")
 def bored2():
     bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
