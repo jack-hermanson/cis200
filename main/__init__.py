@@ -28,6 +28,11 @@ def create_app(config_class=Config):
                 "'self'",
                 "cdn.jsdelivr.net",
                 "www.opensecrets.org/",
+                "https://fonts.googleapis.com",
+            ],
+            "font-src": [
+                "cdn.jsdelivr.net",
+                "https://fonts.gstatic.com"
             ],
             "script-src": [
                 "'self'",
