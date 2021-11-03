@@ -10,6 +10,19 @@
             <p>On this page you can find your public IP adress.</p>
         </div>
     </div>
-    {{ip_data["ip"]}}
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-info">
+                {{ip_data["ip"]}}
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-danger">
+                {{ip_data["ip"]}}
+            </div>
+        </div>
+    </div>
+    
 {% endblock body %}
 
