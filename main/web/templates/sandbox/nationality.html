@@ -13,15 +13,16 @@
     <div class="row">
         <div class="col-12 col-lg-6">
             {{ nationality_data["country"][0]["country_id"] }}
-          <div class="alertalert-secondary">  
+          <div class="alert alert-secondary">
 
           </div>
         </div>
         <div class="col-12 col-lg-6">
+            <alert class="alert-danger">
+                
+            </alert>
             {{ nationality_data["country"][0]["probability"] }}
-            <div class="alertalert-danger">   
-
-            </div>
+          
         </div>
     </div>
 {% endblock body %}
