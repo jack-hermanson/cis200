@@ -23,3 +23,7 @@ def scamming():
 def worksite_wellness():
     return render_template("social/worksite-wellness.html")
 
+@social.route("/information-privacy")
+def information_privacy():
+    return render_template("social/information-privacy.html")
+    
