@@ -144,3 +144,12 @@ def brewing_company():
         "sandbox/brewing-company.html",
         brewing_company_data=brewing_company_data
     )
+
+
+@sandbox.route("/Agify")
+def Agify():
+    Agify_data = ApiRequest(https://api.agify.io/?name=Joe).make_request()
+    return render_template(
+        "Sandbox/agify.html"
+        Agify_data=Agify_data
+    )
