@@ -1,14 +1,15 @@
 {% extends "base.html" %}
 {% set active_page = "Sandbox" %} 
 
-{% block title %}Random User{% endblock title %} 
+{% block title %}IP Adress{% endblock title %} 
 
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>Random User</h2> 
-            <p>On this page you can find a random user profile.</p>
+            <h2>IP Adress</h2> 
+            <p>On this page you can find your public IP adress.</p>
         </div>
     </div>
+    {{ip_data["ip"]}}
 {% endblock body %}
 

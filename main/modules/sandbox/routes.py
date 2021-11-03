@@ -119,8 +119,8 @@ def anime():
     )
 
 
-@sandbox.route("/RandomUser")
-def RandomUser():
-    randomuser_data = ApiRequest("https://randomuser.me/api/").make_request()
-    return render_template("sandbox/RandomUser.html",
-        randomuser_data=randomuser_data)
+@sandbox.route("/IP")
+def IP():
+    ip_data = ApiRequest("https://api.ipify.org/?format=json").make_request()
+    return render_template("sandbox/IP.html",
+        ip_data=ip_data)
