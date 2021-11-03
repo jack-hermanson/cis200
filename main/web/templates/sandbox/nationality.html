@@ -11,9 +11,17 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 col-lg-6">
             {{ nationality_data["country"][0]["country_id"] }}
+          <div class =".alert.alert-secondary">
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
             {{ nationality_data["country"][0]["probability"] }}
+            <div class= ".alert.alert-danger">
+                
+            </div>
         </div>
     </div>
 {% endblock body %}
