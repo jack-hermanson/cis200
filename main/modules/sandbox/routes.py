@@ -119,8 +119,8 @@ def anime():
     )
 
 
-@sandbox.route("/KittenPictures")
-def KittenPictures():
-    kittenpic_data = ApiRequest("http://placekitten.com/g/200/300").make_request()
-    return render_template("sandbox/KittenPictures.html",
-        kittenpic_data=kittenpic_data)
+@sandbox.route("/RandomUser")
+def RandomUser():
+    randomuser_data = ApiRequest("https://randomuser.me/api/").make_request()
+    return render_template("sandbox/RandomUser.html",
+        randomuser_data=randomuser_data)
