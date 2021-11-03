@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% set active_page = "Sandbox" %}
+
+{% block title %}Agify{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Agify</h2>
+            <p>On this page you can calculate a person's age base on their name.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-secondary">
+                {{ agify_data ["name"] }}
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-danger">
+                {{ agify_data ["age"] }}
+            </div>
+        </div>
+    </div>
+{% endblock body %}
