@@ -11,4 +11,4 @@ def index():
 
 @environmental.route("/agriculture-and-water")
 def agriculture_and_water():
-    return render_template("environmental/agriculture-and-water")
+    return render_template("environmental/agriculture-and-water.html")
