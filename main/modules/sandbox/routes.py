@@ -128,6 +128,15 @@ def anime():
     )
 
 
+@sandbox.route("/IP")
+def IP():
+    ip_data = ApiRequest("https://api.ipify.org/?format=json").make_request()
+    return render_template(
+        "sandbox/IP.html",
+        ip_data=ip_data
+    )
+  
+  
 @sandbox.route("/bored-2")
 def bored2():
     bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
@@ -143,4 +152,13 @@ def brewing_company():
     return render_template(
         "sandbox/brewing-company.html",
         brewing_company_data=brewing_company_data
+    )
+
+
+@sandbox.route("/agify")
+def agify():
+    agify_data = ApiRequest("https://api.agify.io/?name=Joe").make_request()
+    return render_template(
+        "sandbox/agify.html",
+        agify_data=agify_data
     )
