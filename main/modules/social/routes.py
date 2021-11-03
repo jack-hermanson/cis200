@@ -9,6 +9,11 @@ def index():
     return render_template("social/index.html")
 
 
+@social.route("/health-foods")
+def health_foods():
+    return render_template("social/health-foods.html")
+  
+
 @social.route("/scamming")
 def scamming():
     return render_template("social/scamming.html") 
@@ -17,3 +22,4 @@ def scamming():
 @social.route("/worksite-wellness")
 def worksite_wellness():
     return render_template("social/worksite-wellness.html")
+
