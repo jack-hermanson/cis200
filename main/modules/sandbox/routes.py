@@ -171,3 +171,11 @@ def coindesk():
         "sandbox/coindesk.html",
         coindesk_data=coindesk_data
     )
+
+@sandbox.route("/genderize")
+def genderize():
+    genderize_data = ApiRequest("https://api.genderize.io/?name=luc").make_request()
+    return render_template(
+        "sandbox/genderize.html",
+        genderize_data=genderize_data
+    )
