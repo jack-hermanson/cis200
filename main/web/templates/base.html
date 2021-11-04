@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
 </head>
 <body>
+    <div class="bg-primary d-none d-lg-block">
+        <div class="container d-flex justify-content-center py-4">
+            <h1 class="mb-0 text-white">Business for a Better World</h1>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <div class="container">
-            <a class="navbar-brand" href="{{ url_for('main.index') }}">CIS 200</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <a class="navbar-brand d-lg-none" href="{{ url_for('main.index') }}">Business for a Better World</a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav w-100 justify-content-lg-between">
                     <li class="nav-item">
                         <a class="nav-link {% if active_page == 'about' %}active{% endif %}" href="{{ url_for('about.index') }}">About</a>
                     </li>
@@ -42,7 +47,7 @@
         </div>
     </nav>
 
-    <div class="container main-container">
+    <div class="container main-container mt-lg-3">
         {% block body %}
         {% endblock body %}
     </div>
