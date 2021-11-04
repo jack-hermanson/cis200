@@ -9,6 +9,11 @@ def index():
     return render_template("advisory/index.html")
 
 
+@advisory.route("/learning-support")
+def learning_support():
+    return render_template("advisory/learning-support.html")
+
+
 @advisory.route("/is-team")
 def is_team():
     return render_template("advisory/is-team.html")
