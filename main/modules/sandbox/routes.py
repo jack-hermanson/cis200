@@ -100,7 +100,8 @@ def random_dog():
         "sandbox/random-dog.html",
         random_dog_data=random_dog_data
     )
-      
+
+
 @sandbox.route("/facts")
 def facts():
     facts_data = ApiRequest("https://uselessfacts.jsph.pl/random.json?language=en").make_request()
