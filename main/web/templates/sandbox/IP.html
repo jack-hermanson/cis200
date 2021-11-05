@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% set active_page = "Sandbox" %} 
+
+{% block title %}IP Adress{% endblock title %} 
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>IP Adress</h2> 
+            <p>On this page you can find your public IP address.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-info">
+                {{ip_data["ip"]}}
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-danger">
+                {{ip_data["ip"]}}
+            </div>
+        </div>
+    </div>
+    
+{% endblock body %}
+
