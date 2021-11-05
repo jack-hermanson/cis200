@@ -44,6 +44,9 @@ def create_app(config_class=Config):
                 "https://imgs.xkcd.com/",
                 "https://cdn2.thecatapi.com",
             ],
+            "frame-src": [
+                "https://www.youtube.com/"
+            ]
         },
         content_security_policy_nonce_in=["script-src"]
     )
