@@ -129,6 +129,13 @@ def anime():
     )
 
 
+@sandbox.route("/holidays")
+def holidays():
+    holidays_data = ApiRequest("https://date.nager.at/api/v3/publicholidays/2017/AT").make_request()
+    return render_template(
+        "sandbox/holidays.html",
+        holidays_data=holidays_data
+    )
 @sandbox.route("/IP")
 def IP():
     ip_data = ApiRequest("https://api.ipify.org/?format=json").make_request()
