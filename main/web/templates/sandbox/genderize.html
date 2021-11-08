@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Genderize.io{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Genderize</h2>
+            <p>On this page you can see what gender your name is associated with</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-success">
+                {{genderize_data["name"] }}    
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-dark">
+                {{genderize_data["gender"] }}
+            </div>
+         </div>
+     </div>
+
+
+
+{% endblock body %}

@@ -100,7 +100,8 @@ def random_dog():
         "sandbox/random-dog.html",
         random_dog_data=random_dog_data
     )
-      
+
+
 @sandbox.route("/facts")
 def facts():
     facts_data = ApiRequest("https://uselessfacts.jsph.pl/random.json?language=en").make_request()
@@ -128,6 +129,13 @@ def anime():
     )
 
 
+@sandbox.route("/holidays")
+def holidays():
+    holidays_data = ApiRequest("https://date.nager.at/api/v3/publicholidays/2017/AT").make_request()
+    return render_template(
+        "sandbox/holidays.html",
+        holidays_data=holidays_data
+    )
 @sandbox.route("/IP")
 def IP():
     ip_data = ApiRequest("https://api.ipify.org/?format=json").make_request()
@@ -155,11 +163,36 @@ def brewing_company():
     )
 
 
-
 @sandbox.route("/memes")
 def memes():
     memes_data = ApiRequest("https://api.imgflip.com/get_memes").make_request()
     return render_template(
         "sandbox/memes.html",
         memes_data=memes_data
+    )
+
+
+@sandbox.route("/agify")
+def agify():
+    agify_data = ApiRequest("https://api.agify.io/?name=Joe").make_request()
+    return render_template(
+        "sandbox/agify.html",
+        agify_data=agify_data
+    )
+
+
+@sandbox.route("/coindesk")
+def coindesk():
+    coindesk_data = ApiRequest("https://api.coindesk.com/v1/bpi/currentprice.json").make_request()
+    return render_template(
+        "sandbox/coindesk.html",
+        coindesk_data=coindesk_data
+    )
+
+@sandbox.route("/genderize")
+def genderize():
+    genderize_data = ApiRequest("https://api.genderize.io/?name=luc").make_request()
+    return render_template(
+        "sandbox/genderize.html",
+        genderize_data=genderize_data
     )
