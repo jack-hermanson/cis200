@@ -153,3 +153,13 @@ def brewing_company():
         "sandbox/brewing-company.html",
         brewing_company_data=brewing_company_data
     )
+
+
+
+@sandbox.route("/memes")
+def memes():
+    memes_data = ApiRequest("https://api.imgflip.com/get_memes").make_request()
+    return render_template(
+        "sandbox/memes.html",
+        memes_data=memes_data
+        )
