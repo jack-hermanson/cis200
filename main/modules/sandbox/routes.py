@@ -163,6 +163,15 @@ def brewing_company():
     )
 
 
+@sandbox.route("/memes")
+def memes():
+    memes_data = ApiRequest("https://api.imgflip.com/get_memes").make_request()
+    return render_template(
+        "sandbox/memes.html",
+        memes_data=memes_data
+    )
+
+
 @sandbox.route("/agify")
 def agify():
     agify_data = ApiRequest("https://api.agify.io/?name=Joe").make_request()
