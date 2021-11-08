@@ -162,4 +162,4 @@ def memes():
     return render_template(
         "sandbox/memes.html",
         memes_data=memes_data
-        )
+    )
