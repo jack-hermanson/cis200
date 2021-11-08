@@ -1,19 +1,33 @@
 {% extends "base.html" %}
 {% set active_page = "sandbox" %}
 
-{% block title %}Bored 2{% endblock title %}
+{% block title %}Cat Facts{% endblock title %}
 
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>Bored 2</h2>
-            <p>See an activity to do while you're bored here.</p>
+            
         </div>
     </div>
     <div class="row">
-    <div class="col-12 col-lg-6">
-        <div class="alert alert-primary" role="alert">
-            {{ bored_data["activity"] }}
+        <div class="col-12 col-lg-6 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Example text.</p>
+                    <a href="#" class="btn btn-primary">Go </a>
+                </div><iframe width="100%" height="315" src="https://www.youtube.com/embed/Qci9DaH90zo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Example text</p>
+                    <a href="#" class="btn btn-primary">Go </a>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock body %}
+
