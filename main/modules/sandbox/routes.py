@@ -93,6 +93,15 @@ def tv_shows():
     )
 
 
+@sandbox.route("/nationality")
+def nationality():
+    nationality_data = ApiRequest("https://api.nationalize.io/?name=michael").make_request()
+    return render_template(
+        "sandbox/nationality.html",
+        nationality_data=nationality_data
+    )
+
+
 @sandbox.route("/random-dog")
 def random_dog():
     random_dog_data = ApiRequest("https://random.dog/woof.json").make_request()
