@@ -1,22 +1,66 @@
 {% extends "base.html" %}
-{% set active_page = "sandbox" %} 
+{% set active_page = "sandbox" %}
 
-{% block title %}Bored{% endblock title %} 
+{% block title %}Bored{% endblock title %}
 
 {% block body %}
-    <div class="row">
-        <div class="col-12">
-            <h2>Bored</h2> {# CHANGE THIS #}
-            <p>Here is something you can do when you're bored.</p> 
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-lg-6 mb-3">
-            <button class="btn btn-success">{{ bored_data["activity"] }}</button>
-        </div>
-        <div class="col-12 col-lg-6">
-            <button class="btn btn-success">{{ bored_data["activity"] }}</button>
-        </div>
-    </div>
-{% endblock body %}
 
+<div class="row">
+    <div class="col-12">
+        <h2>Bored</h2>
+        <p>Here is something you can do when you're bored.</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-lg-6 mb-3">
+        <button class="btn btn-success">{{ bored_data["activity"] }}</button>
+    </div>
+    <div class="col-12 col-lg-6">
+        <button class="btn btn-success">{{ bored_data["activity"] }}</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-lg-12 mb-3">
+        <div class="card">
+            <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" width="100%" height="auto"
+                    src="https://www.youtube.com/embed/JToYQbQ-ciY" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">CSU Video</h5>
+                <p class="card-text">This image displays a Video</p>
+                <a href="#" class="btn btn-primary">Click for good luck</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80
+            " alt="Dog" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">This is just a dog</h5>
+                <p class="card-text">This card simply illustrates a dog. Nothing else... Why are you still reading?</p>
+                <a class="btn btn-primary text-white" href="#">Not a button</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-6">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1611695267521-9891f56679a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+                alt="Just a picture of a hamster" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Don't press the button</h5>
+                <p class="card-text">This text is specifically designed to convince you not to click the following
+                    button, however nothing will happen if you do, I promise...</p>
+                <a class="btn btn-primary text-white" href="#">Don't click this one</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}
