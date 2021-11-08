@@ -4,31 +4,51 @@
 {% block title %}Agify{% endblock title %}
 
 {% block body %}
-    <div class="row">
-        <div class="col-12">
-            <h2>Agify</h2>
-            <p>On this page you can calculate a person's age base on their name.</p>
-        </div>
+<div class="row">
+    <div class="col-12">
+        <h2>Agify</h2>
+        <p>On this page you can calculate a person's age base on their name.</p>
     </div>
+</div>
 
-    <div class="row">
-        <div class="col-12 col-lg-6">
-            <div class="alert alert-secondary">
-                {{ agify_data ["name"] }}
-            </div>
-        </div>
-        <div class="col-12 col-lg-6">
-            <div class="alert alert-danger">
-                {{ agify_data ["age"] }}
-            </div>
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <div class="alert alert-secondary">
+            {{ agify_data ["name"] }}
         </div>
     </div>
-    <div class="card" style="width: 18rem;">
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fagify-turn-old.en.uptodown.com%2Fandroid&psig=AOvVaw1j3tAihLsbTOwCBXISYOn1&ust=1636487793598000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLjdy6PGifQCFQAAAAAdAAAAABAD" class="card-img-top" alt="...">
+    <div class="col-12 col-lg-6">
+        <div class="alert alert-danger">
+            {{ agify_data ["age"] }}
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 col-lg-6 mb-3">
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" width= "100%" height= "auto" src="https://www.youtube.com/embed/oigvGdhaGRo?rel=0"
+                allowfullscreen></iframe>
+        </div>
         <div class="card-body">
-          <h5 class="card-title">Agify in action</h5>
-          <p class="card-text">See how the system predicts the persons age!.</p>
-          <a href="#" class="btn btn-primary">Click Here</a>
+            <h5 class="card-title">Agify in action</h5>
+            <p class="card-text">See how the system predicts the persons age!.</p>
+            <a href="#" class="btn btn-primary">Click Here</a>
         </div>
     </div>
+    <div class="col-12 col-lg-6 mb-3">
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" width= "100%" height= "auto" src="https://www.youtube.com/embed/oigvGdhaGRo?rel=0"
+                allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Agify in action</h5>
+            <p class="card-text">See how the system predicts the persons age!.</p>
+            <a href="#" class="btn btn-primary">Click Here</a>
+        </div>
+    </div>
+    
+</div>
+
+
+
 {% endblock body %}
