@@ -12,13 +12,17 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-lg-6 mb-3">
-            {{ memes_data["setup"] }}
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-secondary">
+                {{ memes_data["data"]["memes"][0]["name"]}}
+            </div>
         </div>
         <div class="col-12 col-lg-6">
-            {{ memes_data["delivery"] }}
+            <div class="alert alert-secondary">
+                {{ memes_data["data"]["memes"][0]["url"]}}
+            </div>
         </div>
     </div>
 
-    
+
 {% endblock body %}
