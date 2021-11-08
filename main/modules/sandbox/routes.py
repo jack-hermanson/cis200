@@ -138,6 +138,22 @@ def anime():
     )
 
 
+@sandbox.route("/holidays")
+def holidays():
+    holidays_data = ApiRequest("https://date.nager.at/api/v3/publicholidays/2017/AT").make_request()
+    return render_template(
+        "sandbox/holidays.html",
+        holidays_data=holidays_data
+    )
+@sandbox.route("/IP")
+def IP():
+    ip_data = ApiRequest("https://api.ipify.org/?format=json").make_request()
+    return render_template(
+        "sandbox/IP.html",
+        ip_data=ip_data
+    )
+  
+  
 @sandbox.route("/bored-2")
 def bored2():
     bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
@@ -153,4 +169,39 @@ def brewing_company():
     return render_template(
         "sandbox/brewing-company.html",
         brewing_company_data=brewing_company_data
+    )
+
+
+@sandbox.route("/memes")
+def memes():
+    memes_data = ApiRequest("https://api.imgflip.com/get_memes").make_request()
+    return render_template(
+        "sandbox/memes.html",
+        memes_data=memes_data
+    )
+
+
+@sandbox.route("/agify")
+def agify():
+    agify_data = ApiRequest("https://api.agify.io/?name=Joe").make_request()
+    return render_template(
+        "sandbox/agify.html",
+        agify_data=agify_data
+    )
+
+
+@sandbox.route("/coindesk")
+def coindesk():
+    coindesk_data = ApiRequest("https://api.coindesk.com/v1/bpi/currentprice.json").make_request()
+    return render_template(
+        "sandbox/coindesk.html",
+        coindesk_data=coindesk_data
+    )
+
+@sandbox.route("/genderize")
+def genderize():
+    genderize_data = ApiRequest("https://api.genderize.io/?name=luc").make_request()
+    return render_template(
+        "sandbox/genderize.html",
+        genderize_data=genderize_data
     )

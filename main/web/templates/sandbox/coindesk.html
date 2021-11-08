@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}Coindesk{% endblock title %}
+
+{% block body %}
+<div class="row">
+    <div class="col-12">
+        <h2>Coindesk</h2>
+        <p>This is the Coindesk page.</p>
+    </div>
+
+    <div class="col-12 col-lg-6 mb-3">
+        <button type="button" class="btn btn-info">{{coindesk_data["bpi"]["USD"]["rate"]}}</button>
+    </div>
+    <div class="col-12 col-lg-6">
+        <button type="button" class="btn btn-info">{{coindesk_data["bpi"]["USD"]["description"]}}</button>
+    </div>
+
+</div>
+{% endblock body %}
