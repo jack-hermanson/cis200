@@ -42,11 +42,13 @@ def bored():
     )
 
 
-    @sandbox.route("/pixel-encounter")
-    def pixel-encounter ():
-        pixel-encoutner_data = ApiRequest("https://app.pixelencounter.com/api/basic/monsters/random").make_request()
-        return render_template("sandbox/pixel-encounter.html", 
-        pixel-encounter_data=pixel-encounter_data)
+@sandbox.route("/bored2")
+def bored2():
+    bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
+    return render_template(
+        "sandbox/bored2.html", 
+        bored_data=bored_data
+    )
 
 
 @sandbox.route("/universities")
