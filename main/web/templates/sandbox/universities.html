@@ -12,7 +12,7 @@
     </div>
 
     <div class="row">
-        <div class="embed-responsive embed-responsive-16by9">
+        <div class="col-12 mb-3">
             <iframe width="100%" height="700" src="https://www.youtube.com/embed/LtxRa9Xd4vw"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -21,9 +21,11 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-lg-6">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="col-12 col-lg-6 mb-3">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://provost.colostate.edu/media/sites/75/2020/08/admin-oval.jpg"
+                     alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">Colorado State University</h5>
                     <p class="card-text">Colorado State University is awesome!</p>
@@ -31,7 +33,18 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-6"></div>
+        <div class="col-12 col-lg-6 mb-3">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://provost.colostate.edu/media/sites/75/2020/08/admin-oval.jpg"
+                     alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Colorado State University</h5>
+                    <p class="card-text">Colorado State University is awesome!</p>
+                    <a href="#" class="btn btn-primary">Go Rams!</a>
+                </div>
+            </div>
+        </div>
     </div>
 
     {% for university in universities_data %}
