@@ -4,42 +4,69 @@
 {% block title %}About{% endblock title %}
 
 {% block body %}
-    <div class="row">
+    <div class="row mb-3">
         <div class="col-12">
-            <h2>About</h2>
-            <p>This is the about page.</p>
+            <img alt="CSU's campus" class="img-fluid" src="{{ url_for('static', filename='images/csu-hero.webp') }}">
         </div>
     </div>
+
     <div class="row">
-        <div class="col-12 col-lg-6 mb-3">
+        <div class="col-12 col-lg-8 mb-3">
             <h3>History</h3>
-            <p>
+            <p class="lead">
                 Emboldened to not only <span class="fw-bold fst-italic">learn about</span> harnessing business for a
                 better world, Colorado State University
                 students in CIS200 decided to <span class="fw-bold fst-italic">actively engage</span> in projects that
-                better the world. During Fall 2021,
+                better the world.
+            </p>
+            <p class="lead">
+                During Fall 2021,
                 CIS200 students imagined, designed, and built this website to showcase student-driven projects that
                 highlight business sustainability challenges and solutions. Students agreed that we’re living in a time
                 when fact-based information can be hard to come by, so they prioritized the presentation of
                 evidence-based content on this website, implementing peer review and vetting peer-reviewed sources.
+            </p>
+            <p class="lead">
                 Furthermore, by engaging in the process of designing and constructing this website, students were able
                 to gain hands-on experience with the Systems Development Life Cycle (SDLC), including Scrum, an agile
                 methodology.
             </p>
         </div>
-        <div class="col-12 col-lg-6 mb-3">
+        <div class="d-none d-lg-flex col-lg-4">
+            <div class="d-flex flex-column">
+                <img src="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                     alt="" class="img-fluid mb-3"/>
+                <img src="https://images.unsplash.com/photo-1579412690850-bd41cd0af397?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&h=1100&q=80"
+                     alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="d-none d-lg-flex col-lg-4 mb-3">
+            <div class="d-flex flex-column">
+                <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&h=1100&q=80"
+                     alt="" class="img-fluid mb-3"/>
+            </div>
+        </div>
+        <div class="col-12 col-lg-8">
             <h3>Mission and Vision</h3>
-            <p>
+            <p class="lead">
                 The aims of the website are to educate the public about sustainability issues that span environmental,
                 social, and economic domains and to encourage the community to become more engaged in sustainability
-                initiatives in Colorado and beyond. Designed to be a sustainable project, the website will be maintained
+                initiatives in Colorado and beyond.
+            </p>
+            <p class="lead">
+                Designed to be a sustainable project, the website will be maintained
                 and expanded by CIS200 students in future semesters to maintain timely and high-quality content.
             </p>
         </div>
     </div>
     <div class="row">
         <div class="col-12">
-            <h3>Meet the Team</h3>
+            <div class="bg-light rounded-3 p-3">
+                <h3>Meet the Team</h3>
+            </div>
         </div>
     </div>
 {% endblock body %}
