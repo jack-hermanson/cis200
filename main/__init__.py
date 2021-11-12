@@ -28,14 +28,25 @@ def create_app(config_class=Config):
                 "'self'",
                 "cdn.jsdelivr.net",
                 "www.opensecrets.org/",
+                "https://fonts.googleapis.com",
+            ],
+            "font-src": [
+                "cdn.jsdelivr.net",
+                "https://fonts.gstatic.com"
             ],
             "script-src": [
                 "'self'",
             ],
             "img-src data:": [
                 "unsafe-eval",
-                "https://images.unsplash.com/"
+                "https://images.unsplash.com/",
+                "https://images.dog.ceo",
+                "https://imgs.xkcd.com/",
+                "https://cdn2.thecatapi.com",
             ],
+            "frame-src": [
+                "https://www.youtube.com/"
+            ]
         },
         content_security_policy_nonce_in=["script-src"]
     )
@@ -51,8 +62,9 @@ def create_app(config_class=Config):
     from .modules.main.routes import main
     from .modules.sandbox.routes import sandbox
     from .modules.social.routes import social
+    from .modules.advisory.routes import advisory
 
-    for blueprint in [about, contact, economic, environmental, main, sandbox, social]:
+    for blueprint in [about, contact, economic, environmental, main, sandbox, social, advisory]:
         app.register_blueprint(blueprint)
 
     # return the app

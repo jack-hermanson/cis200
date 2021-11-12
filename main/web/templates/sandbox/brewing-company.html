@@ -1,29 +1,28 @@
 {% extends "base.html" %}
 {% set active_page = "sandbox" %}
 
-{% block title %}Universities{% endblock title %}
+{% block title %}Brewing Company{% endblock title %}
 
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>Universities</h2>
-            <p>This is a list of universities and their website.</p>
+            <h2>Brewing Company</h2>
+            <p>On this page, you can view different Brewing companies!</p>
         </div>
     </div>
 
-    {% for university in universities_data %}
+    {% for brewing_company in brewing_company_data %}
         <div class="row">
             <div class="col-12 col-lg-6">
                 <div class="alert alert-secondary">
-                    {{ university["name"] }}, {{ university["country"] }}
+                    {{ brewing_company["name"] }}, {{ brewing_company["city"] }}
                 </div>
             </div>
-            <div class="com-12 col-lg-6">
+            <div class="col-12 col-lg-6">
                 <div class="alert alert-danger">
-                    {{ university["domains"][0] }}
+                    {{ brewing_company["state"] }}
                 </div>
             </div>
         </div>
     {% endfor %}
 {% endblock body %}
-
