@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %} 
+
+{% block title %}Nationality based on name{% endblock title %} 
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>Nationality based on name</h2>
+            <p>On this page you can find someones nationality,based on their name.</p> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <div class="alert alert-secondary">
+                {{ nationality_data["country"][0]["country_id"] }}
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+           
+            <div class="alert alert-danger">
+                {{ nationality_data["country"][0]["probability"] }}
+            </div>
+            
+          
+        </div>
+    </div>
+{% endblock body %}

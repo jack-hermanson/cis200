@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
 </head>
 <body>
-    <div class="bg-primary d-none d-lg-block">
+    <div class="bg-success d-none d-lg-block">
         <div class="container d-flex justify-content-center py-4">
             <h1 class="mb-0 text-white">Business for a Better World</h1>
         </div>
@@ -37,9 +37,6 @@
                         <a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('contact.index') }}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'sandbox' %}active{% endif %}" href="{{ url_for('sandbox.index') }}">Sandbox</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link {% if active_page == 'advisory' %}active{% endif %}" href="{{ url_for('advisory.index') }}">Advisory</a>
                     </li>
                 </ul>
@@ -51,6 +48,19 @@
         {% block body %}
         {% endblock body %}
     </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <ul class="navbar-nav w-100">
+                <li class="nav-item">
+                    <a class="nav-link {% if active_page == 'sandbox' %}active{% endif %}" href="{{ url_for('sandbox.index') }}">Sandbox</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if active_page == 'advisory' %}active{% endif %}" href="{{ url_for('advisory.index') }}">Advisory</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <script nonce="{{ csp_nonce() }}" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
     {% block scripts %}

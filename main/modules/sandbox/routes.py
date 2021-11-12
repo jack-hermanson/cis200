@@ -42,6 +42,15 @@ def bored():
     )
 
 
+@sandbox.route("/bored3")
+def bored3():
+    bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
+    return render_template(
+        "sandbox/bored-3.html",
+        bored_data=bored_data
+    )
+
+
 @sandbox.route("/universities")
 def universities():
     universities_data = ApiRequest("http://universities.hipolabs.com/search?country=United+States").make_request()
@@ -90,6 +99,15 @@ def tv_shows():
     return render_template(
         "sandbox/tv-shows.html",
         tv_shows_data=tv_shows_data
+    )
+
+
+@sandbox.route("/nationality")
+def nationality():
+    nationality_data = ApiRequest("https://api.nationalize.io/?name=michael").make_request()
+    return render_template(
+        "sandbox/nationality.html",
+        nationality_data=nationality_data
     )
 
 
@@ -160,6 +178,15 @@ def brewing_company():
     return render_template(
         "sandbox/brewing-company.html",
         brewing_company_data=brewing_company_data
+    )
+
+
+@sandbox.route("/memes")
+def memes():
+    memes_data = ApiRequest("https://api.imgflip.com/get_memes").make_request()
+    return render_template(
+        "sandbox/memes.html",
+        memes_data=memes_data
     )
 
 

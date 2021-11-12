@@ -43,7 +43,8 @@ def create_app(config_class=Config):
                 "https://images.dog.ceo",
                 "https://imgs.xkcd.com/",
                 "https://cdn2.thecatapi.com",
-                "https://provost.colostate.edu"
+                "https://provost.colostate.edu",
+                "'self'"
             ],
             "frame-src": [
                 "https://www.youtube.com/"
