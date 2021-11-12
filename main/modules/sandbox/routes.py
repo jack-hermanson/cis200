@@ -42,8 +42,8 @@ def bored():
     )
 
 
-@sandbox.route("/bored2")
-def bored2():
+@sandbox.route("/bored3")
+def bored3():
     bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
     return render_template(
         "sandbox/bored2.html", 
