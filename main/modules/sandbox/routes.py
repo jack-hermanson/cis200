@@ -46,7 +46,7 @@ def bored():
 def bored3():
     bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
     return render_template(
-        "sandbox/bored2.html", 
+        "sandbox/bored-3.html",
         bored_data=bored_data
     )
 
