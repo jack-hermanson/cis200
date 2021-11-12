@@ -44,6 +44,7 @@ def create_app(config_class=Config):
                 "https://imgs.xkcd.com/",
                 "https://cdn2.thecatapi.com",
                 "https://provost.colostate.edu",
+                "https: // building.colostate.edu",
                 "'self'"
             ],
             "frame-src": [
