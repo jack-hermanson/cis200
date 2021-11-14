@@ -7264,7 +7264,7 @@ textarea.form-control-lg {
   padding: 0.5rem !important;
 }
 
-.p-3 {
+.p-3, .hero {
   padding: 1rem !important;
 }
 
@@ -7766,7 +7766,7 @@ textarea.form-control-lg {
   border-radius: 0.25rem !important;
 }
 
-.rounded-3 {
+.rounded-3, .hero {
   border-radius: 0.3rem !important;
 }
 
