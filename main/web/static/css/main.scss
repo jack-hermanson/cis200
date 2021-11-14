@@ -23,3 +23,8 @@ body {
 .container {
   max-width: 900px;
 }
+
+.hero {
+  @extend .rounded-3;
+  @extend .p-3;
+}
