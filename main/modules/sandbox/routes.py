@@ -214,3 +214,11 @@ def genderize():
         "sandbox/genderize.html",
         genderize_data=genderize_data
     )
+
+@sandbox.route("/funny")
+def funny():
+    funny_data = ApiRequest("https://v2.jokeapi.dev/joke/Programming,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart").make_request()
+    return render_template(
+        "sandbox/funny.html",
+        funny_data=funny_data
+    )

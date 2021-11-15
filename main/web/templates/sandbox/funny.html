@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% set active_page = "sandbox" %}
+
+{% block title %}funny{% endblock title %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h2>funny</h2>
+            <p>This is the funny haha page.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-3">
+            <button type="button" class="btn btn-warning">{{ funny_data["setup"] }}</button>
+        </div>
+        <div class="col-12 col-lg-6">
+            <button type="button" class="btn btn-danger">{{ funny_data["delivery"] }}</button>
+        </div>
+    </div>
+{% endblock body %}
