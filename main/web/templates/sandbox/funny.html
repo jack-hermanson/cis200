@@ -10,6 +10,15 @@
             <p>This is the funny haha page.</p> 
         </div>
     </div>
-    {{ funny_data["setup"] }}
-    {{ funny_data["delivery"] }}
+    <div class="row">
+        <div class="col-12 col-lg-6 mb-3">
+        
+        <button type="button" class="btn btn-warning">{{ funny_data["setup"] }}</button>
+        </div>
+        <div class="col-12 col-lg-6">
+        
+        <button type="button" class="btn btn-danger">{{ funny_data["delivery"] }}</button>
+ 
+        </div>
+    
 {% endblock body %}
