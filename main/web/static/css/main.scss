@@ -1,15 +1,42 @@
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+$will-gray: #f1eeeb;
 
 body {
   .main-container {
-    margin-bottom: 10px;
-    background-color: white;
-    padding: 10px;
+    background-color: $will-gray;
     min-height: 80vh;
   }
-  background-color: #e3e3e3;
+  background-color: white;
+}
+
+.bg-will-gray {
+  background: $will-gray;
+}
+
+.main-nav {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#main-logo {
+  max-height: 140px;
+}
+
+#view-projects {
+  font-size: 0.8em;
+  border-radius: 0;
+}
+
+.mobile-limit-image {
+  @include media-breakpoint-down(lg) {
+    max-height: 200px;
+  }
 }
 
 .bg-red {
@@ -21,7 +48,36 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  //max-width: 900px;
+  padding: 30px;
+}
+
+h1, .serif {
+  font-family: "Libre Baskerville", serif;
+}
+
+h4 {
+  @extend .mono;
+}
+
+.mono {
+  font-family: "Courier Prime", monospace;
+}
+
+h4.mono {
+  font-size: 1.4em;
+}
+
+.large-link {
+  @extend .serif;
+  font-size: 1.6em;
+  color: black;
+  padding-bottom: 3px;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  &:hover {
+    border-bottom: 2px solid $link-hover-color;
+  }
 }
 
 .hero {
