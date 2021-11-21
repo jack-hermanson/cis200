@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% set active_page = "mission" %}
+{% set container_background = "bg-light-brown" %}
+{% set background_dark = True %}
+
+{% block title %}Mission and Vision{% endblock title %}
+
+{% block body %}
+    <div class="row mb-5">
+        <div class="col-12 col-lg-8 offset-lg-2">
+            <h1 class="text-center my-5">Mission and Vision</h1>
+            <p class="lead text-center larger-line-height">
+                The aims of the website are to educate the public about sustainability issues that span environmental,
+                social, and economic domains and to encourage the community to become more engaged in sustainability
+                initiatives in Colorado and beyond.
+            </p>
+            <p class="lead text-center larger-line-height">
+                Designed to be a sustainable project, the website will be maintained
+                and expanded by CIS200 students in future semesters to maintain timely and high-quality content.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img src="https://images.unsplash.com/photo-1631195414013-85b70ff2c180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+                 alt="temporary image"
+                 class="img-fluid mobile-limit-image"
+            />
+        </div>
+        <div class="col-6">
+            <img src="https://images.unsplash.com/photo-1438109382753-8368e7e1e7cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                 alt="temporary image"
+                 class="img-fluid mobile-limit-image"
+            >
+        </div>
+    </div>
+{% endblock body %}

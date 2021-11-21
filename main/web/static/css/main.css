@@ -5,7 +5,9 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -49,7 +51,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: "Raleway", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -229,11 +231,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #1e4d2b;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #183e22;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3369,11 +3371,11 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #0d6efd;
+  color: #1e4d2b;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #0a58ca;
+  color: #183e22;
 }
 .btn-link:disabled, .btn-link.disabled {
   color: #6c757d;
@@ -3841,7 +3843,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #1e4d2b;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3851,7 +3853,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #183e22;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -4702,7 +4704,7 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
+  color: #1e4d2b;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -4715,13 +4717,13 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #0a58ca;
+  color: #183e22;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
 .page-link:focus {
   z-index: 3;
-  color: #0a58ca;
+  color: #183e22;
   background-color: #e9ecef;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -11120,13 +11122,42 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-color: #e3e3e3;
+  background-color: white;
 }
 body .main-container {
-  margin-bottom: 10px;
-  background-color: white;
-  padding: 10px;
-  min-height: 80vh;
+  min-height: 60vh;
+}
+
+.bg-will-gray {
+  background: #f1eeeb;
+}
+
+.bg-light-brown {
+  background: #767263;
+}
+
+.larger-line-height {
+  line-height: 1.6;
+}
+
+.main-nav {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#main-logo {
+  max-height: 140px;
+}
+
+#view-projects {
+  font-size: 0.8em;
+  border-radius: 0;
+}
+
+@media (max-width: 991.98px) {
+  .mobile-limit-image {
+    max-height: 200px;
+  }
 }
 
 .bg-red {
@@ -11138,7 +11169,30 @@ body .main-container {
 }
 
 .container {
-  max-width: 900px;
+  padding: 30px;
+}
+
+h1, .h1, .serif, .large-link {
+  font-family: "Libre Baskerville", serif;
+}
+
+h4, .h4 {
+  font-size: 1.4em;
+}
+
+.mono, h4, .h4 {
+  font-family: "Courier Prime", monospace;
+}
+
+.large-link {
+  font-size: 1.6em;
+  color: black;
+  padding-bottom: 3px;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+}
+.large-link:hover {
+  border-bottom: 2px solid #183e22;
 }
 
 /*# sourceMappingURL=main.css.map */
