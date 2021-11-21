@@ -24,11 +24,6 @@ def worksite_wellness():
     return render_template("social/worksite-wellness.html")
 
 
-@social.route("/wells-fargo-scandal")
-def wells_fargo_scandal():
-    return render_template("social/wells-fargo-scandal.html")
-
-
 @social.route("/social-isolation")
 def social_isolation():
     return render_template("social/social-isolation.html")
