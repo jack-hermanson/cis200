@@ -11176,12 +11176,12 @@ h1, .h1, .serif, .large-link {
   font-family: "Libre Baskerville", serif;
 }
 
-.mono, h4, .h4 {
-  font-family: "Courier Prime", monospace;
+h4, .h4 {
+  font-size: 1.4em;
 }
 
-h4.mono, h4, .h4 {
-  font-size: 1.4em;
+.mono, h4, .h4 {
+  font-family: "Courier Prime", monospace;
 }
 
 .large-link {
