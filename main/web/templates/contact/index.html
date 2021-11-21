@@ -4,16 +4,50 @@
 {% block title %}Contact{% endblock title %}
 
 {% block body %}
-    <div class="row">
+    <div class="row mb-3">
         <div class="col-12">
-            <h2>Contact</h2>
-            <p>This is the contact page.</p>
+            <h1 class="mb-3">Contact Us</h1>
+            <p class="lead">We'd like to hear from you! Please use this form to send us an email, and we'll get back to you.</p>
         </div>
     </div>
-{% endblock body %}
+    <form action="{{ url_for('contact.submit_contact') }}" method="POST">
+        <div class="row mb-3">
+            <div class="col-12 col-lg-6">
+                <div class="mb-3 mb-lg-0">
+                    <label for="name-input" class="form-label">Name</label>
+                    <input name="name" required type="text" class="form-control" id="name-input" />
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div>
+                    <label for="email-input" class="form-label">Email</label>
+                    <input name="email" required type="email" class="form-control" id="email-input" />
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12">
+                <div>
+                    <label class="form-label" for="message-input">Message</label>
+                    <textarea name="message" required id="message-input" class="form-control"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div>
+                    <label class="form-label" for="robot-check">I'm not a Robot</label>
+                    <input name="number" type="number" required id="robot-check" class="form-control" />
+                    <small class="form-text text-muted">To prove that you're not a robot, please enter any negative number.</small>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12">
+                <button class="btn btn-success" type="submit">Submit</button>
+                <a href="{{ url_for('contact.index') }}" class="btn btn-secondary">Reset</a>
+            </div>
+        </div>
+    </form>
 
-{% block scripts %}
-<script nonce="{{ csp_nonce() }}">
-    console.log("javascript");
-</script>
-{% endblock scripts %}
+{% endblock body %}
