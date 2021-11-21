@@ -5,8 +5,8 @@ contact = Blueprint("contact", __name__, url_prefix="/contact")
 
 
 @contact.route("/")
-def index():
-    return render_template("contact/index.html")
+def index(success: bool or None = None):
+    return render_template("contact/index.html", success=success)
 
 
 @contact.route("/", methods=["POST"])
@@ -32,8 +32,5 @@ def submit_contact():
         <p>Make sure you enter a <b>negative number</b>.</p>
         """
 
-    return jsonify({
-        "name": name,
-        "email": email,
-        "message": message
-    })
+    # Todo: connect with an email account to actually send the emails
+    return index(True)

@@ -4,6 +4,11 @@
 {% block title %}Contact{% endblock title %}
 
 {% block body %}
+    {% if success %}
+        <div class="alert alert-success">
+            Your message has been submitted. Thank you.
+        </div>
+    {% endif %}
     <div class="row mb-3">
         <div class="col-12">
             <h1 class="mb-3">Contact Us</h1>
