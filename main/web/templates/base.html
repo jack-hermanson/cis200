@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light py-0">
-        <div class="container bg-will-gray main-nav">
+        <div class="container bg-will-gray main-nav my-lg-3">
             <a class="navbar-brand" href="{{ url_for('main.index') }}">
                 <img id="main-logo" src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" />
             </a>
@@ -43,14 +43,14 @@
         {% endblock body %}
     </div>
 
-    <nav class="navbar navbar-expand py-0 navbar-light">
+    <nav class="navbar navbar-expand py-0 navbar-light my-lg-3">
         <div class="container bg-will-gray">
             <ul class="navbar-nav w-100">
                 <li class="nav-item">
                     <a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('contact.index') }}">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a  class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('about.mission_and_vision') }}">Mission and Vision</a>
+                    <a  class="nav-link {% if active_page == 'mission' %}active{% endif %}" href="{{ url_for('about.mission_and_vision') }}">Mission and Vision</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if active_page == 'advisory' or active_page == 'sandbox' %}active{% endif %}" href="{{ url_for('advisory.index') }}">Advisory</a>
