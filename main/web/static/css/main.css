@@ -11125,12 +11125,19 @@ body {
   background-color: white;
 }
 body .main-container {
-  background-color: #f1eeeb;
   min-height: 80vh;
 }
 
 .bg-will-gray {
   background: #f1eeeb;
+}
+
+.bg-light-brown {
+  background: #767263;
+}
+
+.larger-line-height {
+  line-height: 1.6;
 }
 
 .main-nav {

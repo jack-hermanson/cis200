@@ -38,7 +38,7 @@
         </div>
     </nav>
 
-    <div class="container main-container">
+    <div class="container main-container {% if container_background %}{{ container_background }}{% else %}bg-will-gray{% endif %} {% if background_dark %}text-light{% endif %}">
         {% block body %}
         {% endblock body %}
     </div>
@@ -48,6 +48,9 @@
             <ul class="navbar-nav w-100">
                 <li class="nav-item">
                     <a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('contact.index') }}">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a  class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('about.mission_and_vision') }}">Mission and Vision</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {% if active_page == 'advisory' or active_page == 'sandbox' %}active{% endif %}" href="{{ url_for('advisory.index') }}">Advisory</a>

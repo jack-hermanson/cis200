@@ -6,10 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
 $will-gray: #f1eeeb;
+$light-brown: #767263;
 
 body {
   .main-container {
-    background-color: $will-gray;
     min-height: 80vh;
   }
   background-color: white;
@@ -17,6 +17,14 @@ body {
 
 .bg-will-gray {
   background: $will-gray;
+}
+
+.bg-light-brown {
+  background: $light-brown;
+}
+
+.larger-line-height {
+  line-height: 1.6;
 }
 
 .main-nav {
