@@ -12,3 +12,8 @@ def index():
 @about.route("/mission-and-vision")
 def mission_and_vision():
     return render_template("about/mission-and-vision.html")
+
+
+@about.route("/projects")
+def projects():
+    return render_template("about/projects.html")
