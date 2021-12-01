@@ -11195,4 +11195,20 @@ h4, .h4 {
   border-bottom: 2px solid #183e22;
 }
 
+@media (min-width: 992px) {
+  .two-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .three-columns {
+    column-count: 3;
+  }
+}
+
+h6, .h6 {
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */
