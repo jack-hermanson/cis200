@@ -32,3 +32,8 @@ def social_isolation():
 @social.route("/information-privacy")
 def information_privacy():
     return render_template("social/information-privacy.html")
+
+
+@social.route("/bias-in-the-news")
+def bias_in_the_news():
+    return render_template("social/bias-in-the-news.html")

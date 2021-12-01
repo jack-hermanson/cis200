@@ -20,7 +20,7 @@ def agriculture_and_water():
 
 @environmental.route("/sustainable-restaurants")
 def sustainable_restaurants():
-    return render_template("environmental/sustainable_restaurants.html")
+    return render_template("environmental/sustainable-restaurants.html")
 
 @environmental.route("/csu-sustainability")
 def csu_sustainability():
