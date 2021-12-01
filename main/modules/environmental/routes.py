@@ -3,6 +3,7 @@ from flask import Blueprint, render_template
 
 environmental = Blueprint("environmental", __name__, url_prefix="/environmental")
 
+
 @environmental.route("/")
 def index():
     return render_template("environmental/index.html")
@@ -22,3 +23,7 @@ def agriculture_and_water():
 def sustainable_restaurants():
     return render_template("environmental/sustainable-restaurants.html")
 
+
+@environmental.route("/csu-sustainability")
+def csu_sustainability():
+    return render_template("environmental/csu-sustainability.html")
