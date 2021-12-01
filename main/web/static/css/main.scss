@@ -87,3 +87,19 @@ h4 {
   @extend .rounded-3;
   @extend .p-3;
 }
+
+.two-columns {
+  @include media-breakpoint-up(lg) {
+    column-count: 2;
+  }
+}
+
+.three-columns {
+  @include media-breakpoint-up(lg) {
+    column-count: 3;
+  }
+}
+
+h6 {
+  font-weight: bold;
+}
