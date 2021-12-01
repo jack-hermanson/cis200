@@ -23,3 +23,6 @@ def homelessness_in_colorado():
 def forensicact_moneylaundering():
     return render_template("economic/forensicact-moneylaundering.html")
 
+@economic.route("/")
+def bias_in_news():
+    return render_template("economic/bias-in-news.html")
