@@ -4,15 +4,17 @@
 {% block title %}About{% endblock title %}
 
 {% block body %}
-    <div class="row mb-3">
-        <div class="col-12">
-            <img alt="CSU's campus" class="img-fluid" src="{{ url_for('static', filename='images/csu-hero.webp') }}">
-        </div>
-    </div>
-
     <div class="row">
-        <div class="col-12 col-lg-8 mb-3">
-            <h3>History</h3>
+        <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+            <img src="https://images.unsplash.com/photo-1495814994547-3c7b11eb9938?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                 alt="temporary image"
+                 class="img-fluid mobile-limit-image" />
+        </div>
+        <div class="col-12 offset-lg-1 col-lg-6 d-flex flex-column">
+            <h1 class="mb-4">CIS-200 Business Rams</h1>
+            <h4 class="mb-3">Business for a Better World</h4>
+
+            <h5 class="my-3">History</h5>
             <p class="lead">
                 Emboldened to not only <span class="fw-bold fst-italic">learn about</span> harnessing business for a
                 better world, Colorado State University
@@ -31,42 +33,9 @@
                 to gain hands-on experience with the Systems Development Life Cycle (SDLC), including Scrum, an agile
                 methodology.
             </p>
-        </div>
-        <div class="d-none d-lg-flex col-lg-4">
-            <div class="d-flex flex-column">
-                <img src="https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
-                     alt="" class="img-fluid mb-3"/>
-                <img src="https://images.unsplash.com/photo-1579412690850-bd41cd0af397?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&h=1100&q=80"
-                     alt="" class="img-fluid">
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="d-none d-lg-flex col-lg-4 mb-3">
-            <div class="d-flex flex-column">
-                <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&h=1100&q=80"
-                     alt="" class="img-fluid mb-3"/>
-            </div>
-        </div>
-        <div class="col-12 col-lg-8">
-            <h3>Mission and Vision</h3>
-            <p class="lead">
-                The aims of the website are to educate the public about sustainability issues that span environmental,
-                social, and economic domains and to encourage the community to become more engaged in sustainability
-                initiatives in Colorado and beyond.
-            </p>
-            <p class="lead">
-                Designed to be a sustainable project, the website will be maintained
-                and expanded by CIS200 students in future semesters to maintain timely and high-quality content.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="bg-light rounded-3 p-3">
-                <h3>Meet the Team</h3>
-            </div>
+            <span class="mt-auto">
+                <a class="large-link" href="{{ url_for('about.projects') }}">View our Work &LongRightArrow;</a>
+            </span>
         </div>
     </div>
 {% endblock body %}

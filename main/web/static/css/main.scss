@@ -1,15 +1,49 @@
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+$will-gray: #f1eeeb;
+$light-brown: #767263;
 
 body {
   .main-container {
-    margin-bottom: 10px;
-    background-color: white;
-    padding: 10px;
-    min-height: 80vh;
+    min-height: 60vh;
   }
-  background-color: #e3e3e3;
+  background-color: white;
+}
+
+.bg-will-gray {
+  background: $will-gray;
+}
+
+.bg-light-brown {
+  background: $light-brown;
+}
+
+.larger-line-height {
+  line-height: 1.6;
+}
+
+.main-nav {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+#main-logo {
+  max-height: 140px;
+}
+
+#view-projects {
+  font-size: 0.8em;
+  border-radius: 0;
+}
+
+.mobile-limit-image {
+  @include media-breakpoint-down(lg) {
+    max-height: 200px;
+  }
 }
 
 .bg-red {
@@ -21,10 +55,51 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  padding: 30px;
+}
+
+h1, .serif {
+  font-family: "Libre Baskerville", serif;
+}
+
+h4 {
+  @extend .mono;
+  font-size: 1.4em;
+}
+
+.mono {
+  font-family: "Courier Prime", monospace;
+}
+
+.large-link {
+  @extend .serif;
+  font-size: 1.6em;
+  color: black;
+  padding-bottom: 3px;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  &:hover {
+    border-bottom: 2px solid $link-hover-color;
+  }
 }
 
 .hero {
   @extend .rounded-3;
   @extend .p-3;
+}
+
+.two-columns {
+  @include media-breakpoint-up(lg) {
+    column-count: 2;
+  }
+}
+
+.three-columns {
+  @include media-breakpoint-up(lg) {
+    column-count: 3;
+  }
+}
+
+h6 {
+  font-weight: bold;
 }
