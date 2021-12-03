@@ -37,3 +37,8 @@ def information_privacy():
 @social.route("/bias-in-the-news")
 def bias_in_the_news():
     return render_template("social/bias-in-the-news.html")
+
+
+@social.route("/normalizing-health")
+def normalizing_health():
+    return render_template("social/normalizing-heatlh.html")
