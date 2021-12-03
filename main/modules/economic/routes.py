@@ -18,3 +18,12 @@ def wells_fargo_scandal():
 def homelessness_in_colorado():
     return render_template("economic/homelessness-in-colorado.html")
 
+
+@economic.route("/affordable-housing")
+def affordable_housing():
+    return render_template("economic/affordable-housing.html")
+
+
+@economic.route("/forensicact-moneylaundering")
+def forensicact_moneylaundering():
+    return render_template("economic/forensicact-moneylaundering.html")
