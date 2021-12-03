@@ -42,6 +42,15 @@ def bored():
     )
 
 
+@sandbox.route("/bored3")
+def bored3():
+    bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
+    return render_template(
+        "sandbox/bored-3.html",
+        bored_data=bored_data
+    )
+
+
 @sandbox.route("/universities")
 def universities():
     universities_data = ApiRequest("http://universities.hipolabs.com/search?country=United+States").make_request()
@@ -204,4 +213,12 @@ def genderize():
     return render_template(
         "sandbox/genderize.html",
         genderize_data=genderize_data
+    )
+
+@sandbox.route("/funny")
+def funny():
+    funny_data = ApiRequest("https://v2.jokeapi.dev/joke/Programming,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart").make_request()
+    return render_template(
+        "sandbox/funny.html",
+        funny_data=funny_data
     )

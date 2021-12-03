@@ -18,7 +18,6 @@
 - Adam Giniewski
 - Ethan Melsheimer
 - Bryan Lezama
-- Christina Serrano
 - Andrew Patton
 - Frank Pomponio
 - Kelsey Clough 
@@ -29,3 +28,4 @@
 - Chaezar Sebring
 - Justin Ginter
 - Matt Koob
+- Christina Serrano

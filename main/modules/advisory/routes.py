@@ -14,11 +14,6 @@ def learning_support():
     return render_template("advisory/learning-support.html")
 
 
-@advisory.route("/is-team")
-def is_team():
-    return render_template("advisory/is-team.html")
-
-
 @advisory.route("/project-management")
 def project_management():
     return render_template("advisory/project-management.html")
