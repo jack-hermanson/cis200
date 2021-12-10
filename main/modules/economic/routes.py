@@ -19,10 +19,16 @@ def homelessness_in_colorado():
     return render_template("economic/homelessness-in-colorado.html")
 
 
+@economic.route("/affordable-housing")
+def affordable_housing():
+    return render_template("economic/affordable-housing.html")
+
+
 @economic.route("/forensicact-moneylaundering")
 def forensicact_moneylaundering():
     return render_template("economic/forensicact-moneylaundering.html")
 
-@economic.route("/")
+
+@economic.route("/bias-in-the-news")
 def bias_in_news():
     return render_template("economic/bias-in-news.html")
