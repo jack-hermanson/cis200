@@ -11211,4 +11211,8 @@ h6, .h6 {
   font-weight: bold;
 }
 
+.works-cited a {
+  display: block;
+}
+
 /*# sourceMappingURL=main.css.map */
