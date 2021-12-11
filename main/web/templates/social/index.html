@@ -6,21 +6,108 @@
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>Social</h2>
-            <p>This is the social page.</p>
+            <h1>Social</h1>
+            <p class="lead">This is the social page.</p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-12 col-lg-6">
-            <div class="list-group">
-                <a href="{{ url_for('social.health_foods') }}" class="list-group-item list-group-item-action">Health Foods</a>
-                <a href="{{ url_for('social.scamming') }}" class="list-group-item list-group-item-action">Scamming</a>
-                <a href="{{ url_for('social.social_isolation') }}" class="list-group-item list-group-item-action">Social Isolation</a>
-                <a href="{{ url_for('social.information_privacy') }}" class="list-group-item list-group-item-action">Information Privacy</a>
-                <a href="{{ url_for('social.worksite_wellness') }}" class="list-group-item list-group-item-action">Worksite Wellness</a>
-                <a href="{{ url_for('social.normalizing_health') }}" class="list-group-item list-group-item-action">Normalizing Health</a>
-                <a href="{{ url_for('social.bias_in_the_news') }}" class="list-group-item list-group-item-action">Bias in the News</a>
+        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                     alt="Health Foods"/>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis, cum esse et in
+                        incidunt iure labore natus officiis pariatur, perspiciatis quaerat quia quod repellat, sed sunt
+                        voluptates voluptatibus voluptatum.</p>
+                    <a class="btn btn-success" href="{{ url_for('social.health_foods') }}">Health Foods</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80"
+                     alt="Scamming"/>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis, cum esse et in
+                        incidunt iure labore natus officiis pariatur, perspiciatis quaerat quia quod repellat, sed sunt
+                        voluptates voluptatibus voluptatum.</p>
+                    <a class="btn btn-success" href="{{ url_for('social.scamming') }}">Scamming</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-3">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://images.unsplash.com/photo-1534330207526-8e81f10ec6fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                     alt="Social Isolation"/>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis, cum esse et in
+                        incidunt iure labore natus officiis pariatur, perspiciatis quaerat quia quod repellat, sed sunt
+                        voluptates voluptatibus voluptatum.</p>
+                    <a class="btn btn-success" href="{{ url_for('social.social_isolation') }}">Social Isolation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://images.unsplash.com/photo-1633265486064-086b219458ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                     alt="Information Privacy"/>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis, cum esse et in
+                        incidunt iure labore natus officiis pariatur, perspiciatis quaerat quia quod repellat, sed sunt
+                        voluptates voluptatibus voluptatum.</p>
+                    <a class="btn btn-success" href="{{ url_for('social.information_privacy') }}">Information
+                        Privacy</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://images.unsplash.com/photo-1621252179027-94459d278660?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                     alt="Worksite Wellness"/>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis, cum esse et in
+                        incidunt iure labore natus officiis pariatur, perspiciatis quaerat quia quod repellat, sed sunt
+                        voluptates voluptatibus voluptatum.</p>
+                    <a class="btn btn-success" href="{{ url_for('social.worksite_wellness') }}">Worksite Wellness</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-3">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                     alt="Normalizing Health"/>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis, cum esse et in
+                        incidunt iure labore natus officiis pariatur, perspiciatis quaerat quia quod repellat, sed sunt
+                        voluptates voluptatibus voluptatum.</p>
+                    <a class="btn btn-success" href="{{ url_for('social.normalizing_health') }}">Normalizing Health</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+            <div class="card">
+                <img class="card-img-top"
+                     src="https://images.unsplash.com/photo-1503542724004-53e16040c0c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&h=460&q=80"
+                     alt="Bias in the News"/>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis, cum esse et in
+                        incidunt iure labore natus officiis pariatur, perspiciatis quaerat quia quod repellat, sed sunt
+                        voluptates voluptatibus voluptatum.</p>
+                    <a class="btn btn-success" href="{{ url_for('social.bias_in_the_news') }}">Bias in the News</a>
+                </div>
             </div>
         </div>
     </div>
