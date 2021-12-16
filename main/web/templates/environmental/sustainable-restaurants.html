@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% set active_page = "environmental" %}
 
-{% block title %}Sustainable Restaurants{% endblock title %}
+{% block title %}Restaurant Sustainability{% endblock title %}
 
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>Sustainable Restaurants</h2>
+            <h1>Restaurant Sustainability</h1>
         </div>
     </div>
 
@@ -14,16 +14,32 @@
         <div class="col-12 mb-3">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">The Issue:</h5>
-                    <p class="card-text three-columns larger-line-height">Over 20 billion pounds of food is wasted each
-                        year in the Restaurant Industry in the United States. According to 303 Magazine, “Over 40% of
-                        what we produce in the US [is] thrown away and not used. This is enough to feed everyone who
-                        lives in the US and not wasting food could end hunger tomorrow”.This is a large issue in the
-                        restaurant industry that needs to be addressed. According to Restaurant Hospitality “The
-                        restaurant industry alone generates about 11.4 million tons of food waste annually at a cost of
-                        about $25 billion per year”. We are addressing the issues of food waste, sustainability, and the
-                        use of locally sourced foods within the restaurant industry. Businesses will oftentimes choose
-                        the cheap option over the sustainable option, but that doesn’t have to be the case. </p>
+                    <h5>The Issue:</h5>
+                    <div class="row">
+                        <div class="col-12 col-lg-8 mb-3 mb-lg-0">
+                            <p class="two-columns larger-line-height">Over 20 billion pounds of food is wasted each
+                                year in the Restaurant Industry in the United States. According to 303 Magazine, “Over
+                                40% of
+                                what we produce in the US [is] thrown away and not used. This is enough to feed everyone
+                                who
+                                lives in the US and not wasting food could end hunger tomorrow”.This is a large issue in
+                                the
+                                restaurant industry that needs to be addressed. According to Restaurant Hospitality “The
+                                restaurant industry alone generates about 11.4 million tons of food waste annually at a
+                                cost of
+                                about $25 billion per year”. We are addressing the issues of food waste, sustainability,
+                                and the
+                                use of locally sourced foods within the restaurant industry. Businesses will oftentimes
+                                choose
+                                the cheap option over the sustainable option, but that doesn’t have to be the case.
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <img alt="wasted food"
+                                 src="https://images.unsplash.com/flagged/photo-1572213426852-0e4ed8f41ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+                                 class="img-thumbnail float-end"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,19 +50,217 @@
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">The Solution:</h5>
-                    <p class="card-text three-columns larger-line-height">Our concept is a “Greenhouse restaurant.” A
-                        locally sourced restaurant could be built that would be surrounded by greenhouses. The food that
-                        would be used in most of the meals would come from the greenhouses. The greenhouses themselves
-                        would be powered by solar energy and the panels would be located on the outside of each one.
-                        Most of the food waste from the restaurant would be composted and used in the soil to grow all
-                        of the produce. The meat and dairy products used in the restaurant would come from local farms
-                        in the area of Fort Collins to support the underrepresented farms that grow locally sourced
-                        food. There are restaurants that are locally sourced or farm to table that exist, but they don’t
-                        directly grow their products on site. There are also restaurants that have greenhouse seating,
-                        but these restaurants aren’t contributing towards sustainability or food waste. The reduction in
-                        food waste will also create savings to help offset the other costs related to sustainability.
-                        This greenhouse restaurant would be a fun, interactive restaurant that would help with the
-                        issues of sustainability and food waste in the restaurant industry. </p>
+                    <div class="row">
+                        <div class="col-12 col-lg-8 mb-3 mb-lg-0">
+                            <p class="card-text two-columns larger-line-height">Our concept is a “Greenhouse
+                                restaurant.” A
+                                locally sourced restaurant could be built that would be surrounded by greenhouses. The
+                                food that
+                                would be used in most of the meals would come from the greenhouses. The greenhouses
+                                themselves
+                                would be powered by solar energy and the panels would be located on the outside of each
+                                one.
+                                Most of the food waste from the restaurant would be composted and used in the soil to
+                                grow all
+                                of the produce. The meat and dairy products used in the restaurant would come from local
+                                farms
+                                in the area of Fort Collins to support the underrepresented farms that grow locally
+                                sourced
+                                food. There are restaurants that are locally sourced or farm to table that exist, but
+                                they don’t
+                                directly grow their products on site. There are also restaurants that have greenhouse
+                                seating,
+                                but these restaurants aren’t contributing towards sustainability or food waste. The
+                                reduction in
+                                food waste will also create savings to help offset the other costs related to
+                                sustainability.
+                                This greenhouse restaurant would be a fun, interactive restaurant that would help with
+                                the
+                                issues of sustainability and food waste in the restaurant industry. </p>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <img src="https://images.unsplash.com/photo-1616862224174-f195ec9b03f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                 alt="Fresh food"
+                                 class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5>Greenhouse Restaurant Floor Plan:</h5>
+                    <img class="img-thumbnail mb-3"
+                         src="{{ url_for('static', filename='images/greenhouse-restaurant.png') }}"
+                         alt="Greenhouse floor plan">
+                    <img class="img-thumbnail"
+                         src="{{ url_for('static', filename='images/greenhouse-restaurant-1.png') }}"
+                         alt="Greenhouse floor plan">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-body larger-line-height">
+                    <h5>Material Composting Storage:</h5>
+                    <p>Both the green and brown types of compost are stored here from the restaurant as well as
+                        imported composting material.
+                        How it's done: Compost storage is on the ground covered with a tarp or plastic sheeting
+                        which
+                        will prevent moisture from rain and snow runoff.</p>
+                    <img class="img-thumbnail col-8 col-lg-4"
+                         src="https://images.unsplash.com/photo-1584747420644-5c767eebcbe6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
+                         alt="compost">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-body larger-line-height">
+                    <h5>Active Composting Area:</h5>
+                    <p>Here the compost is managed with proper water amounts added and the compost receives enough
+                        airflow for the compost to develop. This creates an environment that is constantly producing
+                        compost in a short amount of time.</p>
+                    <img src="https://images.unsplash.com/photo-1599776764869-5bcc29be35a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                         alt="Compost bin" class="img-thumbnail col-8 col-lg-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-body larger-line-height">
+                    <h5>Finished Composting Area</h5>
+                    <p>The finished compost is kept here and transferred to the greenhouses when needed.
+                        What it should look like: The material should be dark brown, crumbly, and smells like earth
+                        rather than rotting vegetables.
+                    </p>
+                    <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                         alt="compost dirt" class="img-thumbnail col-8 col-lg-4">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Interviews:</h5>
+                    <p class="card-text three-columns larger-line-height">Our group identified a specific customer
+                        segments to interview to see if the “Greenhouse Restaurant” concept would be intriguing to
+                        consumers. The customer segment that our group identified are people that are environmentally
+                        friendly and implement sustainable practices in their everyday lives. We identified this as our
+                        customer segment to interview because the overall goal of the “Greenhouse Restaurant” is to
+                        improve the issues of sustainability, food waste, and locally sourced foods in the restaurant
+                        industry. A large majority of our initial customers will be people that care about these issues
+                        and want to improve the environment.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="mb-3">Katie Lennie - Environmental Engineering Major</h5>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h6>How important are sustainable practices to you?</h6>
+                            <p class="larger-line-height">“They are very important to me and I try my best to practice
+                                them everyday. It’s
+                                important to me
+                                because everyone needs to do their part to impact the large issues on sustainability.
+                                One person
+                                isn’t going to make a difference but if everyone incorporates sustainable practices in
+                                their day
+                                to day lives then it will make a difference. It also affects future generations.”</p>
+                        </div>
+                        <div class="col-12 col-lg-6 mb-3">
+                            <h6>What kind of sustainable practices do you incorporate in your day to day life?</h6>
+                            <p class="larger-line-height">“Recycling, composting, reusable water bottles, reusable
+                                coffee mugs, reusable grocery
+                                bags.”</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h6>How much food waste do you think is produced in the restaurant industry each year?
+                            </h6>
+                            <p class="larger-line-height">“70 million pounds”</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h6>Would you be willing to pay a slightly higher cost for a higher quality dish?</h6>
+                            <p class="larger-line-height">“I would be willing to pay more because I think it’s going to
+                                a larger cause but as long
+                                as it
+                                isn’t too much money.”</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h6>How does the ambience of a restaurant impact the way you experience it?</h6>
+                            <p class="larger-line-height">“It’s everything. The quality of the food is important but the
+                                experience and the vibe
+                                plays a
+                                big role in your dining experience.”</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h6>What’s your opinion on interactive restaurants?</h6>
+                            <p class="larger-line-height">“I think that they’re very fun because they’re more
+                                unique.”</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h6>What’s the most important aspect of your dining experience and why?</h6>
+                            <p class="larger-line-height">“The food and the atmosphere because both are important. You
+                                have to have one or the
+                                other for a
+                                restaurant to be good.”</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h6>Are you familiar with the benefits of locally sourced foods?</h6>
+                            <p class="larger-line-height">“Yes I am; they reduce gas emissions and help local
+                                farms.”</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h6>Do you feel as though local farms are underrepresented in the restaurant industry? Can
+                                you
+                                elaborate on that?</h6>
+                            <p class="larger-line-height">“Yes they are. Many restaurants buy from commercial farms
+                                because they are cheaper. This
+                                doesn't
+                                support the local farmers whereas buying locally sourced food does.”
+                            </p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <h6>10. If this option (Greenhouse Restaurant) was available to you, would you be a
+                                customer?</h6>
+                            <p class="larger-line-height">“Yes, because I think that it’s a great idea that this
+                                business is trying to be sustainable, so I want to show my support because a lot of
+                                businesses don’t care as much.”</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,46 +270,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Interviews:</h5>
-                    <p class="card-text three-columns larger-line-height">Our group identified a specific customer
-                        segment to interview to see if the “Greenhouse Restaurant” concept would be intriguing to
-                        consumers. The customer segment that our group identified are people that are environmentally
-                        friendly and implement sustainable practices in their everyday lives. We identified this as our
-                        customer segment to interview because the overall goal of the “Greenhouse Restaurant” is to
-                        improve the issues of sustainability, food waste, and locally sourced foods in the restaurant
-                        industry. A large majority of our initial customers will be people that care about these issues
-                        and want to improve the environment.</p>
-                    <h5>Katie Lennie - Environmental Engineering Major</h5>
-                    <p class="three-columns larger-line-height">How important are sustainable practices to you?
-                        “They are very important to me and I try my best to practice them everyday. It’s important to me
-                        because everyone needs to do their part to impact the large issues on sustainability. One person
-                        isn’t going to make a difference but if everyone incorporates sustainable practices in their day
-                        to day lives then it will make a difference. It also affects future generations.”
-                        What kind of sustainable practices do you incorporate in your day to day life?
-                        “Recycling, composting, reusable water bottles, reusable coffee mugs, reusable grocery bags.”
-                        How much food waste do you think is produced in the restaurant industry each year?
-                        “70 million pounds”
-                        Would you be willing to pay a slightly higher cost for a higher quality dish?
-                        “I would be willing to pay more because I think it’s going to a larger cause but as long as it
-                        isn’t too much money.”
-                        How does the ambience of a restaurant impact the way you experience it?
-                        “It’s everything. The quality of the food is important but the experience and the vibe plays a
-                        big role in your dining experience.”
-                        What’s your opinion on interactive restaurants?
-                        “I think that they’re very fun because they’re more unique.”
-                        What’s the most important aspect of your dining experience and why?
-                        “The food and the atmosphere because both are important. You have to have one or the other for a
-                        restaurant to be good.”
-                        Are you familiar with the benefits of locally sourced foods?
-                        “Yes I am, they reduce gas emissions and help local farms.”
-                        Do you feel as though local farms are underrepresented in the restaurant industry? Can you
-                        elaborate on that?
-                        “Yes they are. Many restaurants buy from commercial farms because they are cheaper. This doesn't
-                        support the local farmers whereas buying locally sourced food does.”
-                        If this option (Greenhouse Restaurant) was available to you, would you be a customer?
-                        “Yes, because I think that it’s a great idea that this business is trying to be sustainable so I
-                        want to show my support because a lot of businesses don’t care as much.”</p>
-                    <h5>Tess Loven - Ecosystem Science and Sustainability Major</h5>
+                    <h5 class="mb-3">Tess Loven - Ecosystem Science and Sustainability Major</h5>
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <h6>How important are sustainable practices to you?</h6>
@@ -138,27 +313,35 @@
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <h6>What's the most important aspect of your dining experience and why?</h6>
-                            <p class="larger-line-height">"The food because that's the reason why I'm going to that specific restaurant. The food
+                            <p class="larger-line-height">"The food because that's the reason why I'm going to that
+                                specific restaurant. The food
                                 has to be
                                 good."</p>
                         </div>
                         <div class="col-12 col-lg-6">
                             <h6>Are you familar with the benefits of locally sourced food?</h6>
-                            <p class="larger-line-height">"Yes, locally sourced foods reduce transportation use and support local farms instead of large
-                                corporations. The animals are also treated better on local farms which is important to me."</p>
+                            <p class="larger-line-height">"Yes, locally sourced foods reduce transportation use and
+                                support local farms instead of large
+                                corporations. The animals are also treated better on local farms which is important to
+                                me."</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <h6>Do you feel as though local farms are underrepresented in the restaurant industry? Can you
+                            <h6>Do you feel as though local farms are underrepresented in the restaurant industry? Can
+                                you
                                 eleborate on that?</h6>
-                            <p class="larger-line-height">“Yes they are underrepresented because a business owner is looking to make money so they buy from
-                                larger corporations. I think that most restaurants buy from these larger farms compared to local
+                            <p class="larger-line-height">“Yes they are underrepresented because a business owner is
+                                looking to make money so they buy from
+                                larger corporations. I think that most restaurants buy from these larger farms compared
+                                to local
                                 ones.”</p>
                         </div>
                         <div class="col-12 col-lg-6">
-                            <h6>If this option (Greenhouse Restaurant) was available to you, would you be a customer?</h6>
-                            <p class="mb-0 larger-line-height">“Yes because that’s as local as you can get. It’s grown on site and the ingredients
+                            <h6>If this option (Greenhouse Restaurant) was available to you, would you be a
+                                customer?</h6>
+                            <p class="mb-0 larger-line-height">“Yes because that’s as local as you can get. It’s grown
+                                on site and the ingredients
                                 are very fresh. It’s also helping the environment and supporting a bigger cause.”</p>
                         </div>
                     </div>
