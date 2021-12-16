@@ -11149,6 +11149,10 @@ body .main-container {
   max-height: 140px;
 }
 
+.card-body p:not(.lead) {
+  font-family: "Libre Baskerville", serif;
+}
+
 #view-projects {
   font-size: 0.8em;
   border-radius: 0;
