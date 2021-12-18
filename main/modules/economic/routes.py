@@ -27,3 +27,8 @@ def affordable_housing():
 @economic.route("/forensicact-moneylaundering")
 def forensicact_moneylaundering():
     return render_template("economic/forensicact-moneylaundering.html")
+
+
+@economic.route("/ecosurf")
+def ecosurf():
+    return render_template("economic/ecosurf.html")

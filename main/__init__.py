@@ -43,6 +43,7 @@ def create_app(config_class=Config):
                 "https://images.dog.ceo",
                 "https://imgs.xkcd.com/",
                 "https://cdn2.thecatapi.com",
+                "https://i.imgur.com/ZhPqSpV.png",
                 "'self'"
             ],
             "frame-src": [
