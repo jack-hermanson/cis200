@@ -1,22 +1,21 @@
 {% extends "base.html" %}
-{% set active_page = "advisory" %} 
+{% set active_page = "advisory" %}
 
-{% block title %}Marketing{% endblock title %} 
+{% block title %}Marketing{% endblock title %}
 
 {% block body %}
-<div class="row">
-    <div class="col-12 col-lg-6 mb-3">
-        <img src="{{ url_for("static", filename="images/marketing.jpg") }}"
-             alt="Marketing Team Working"
-             class="img-fluid mobile-limit-image"
-        />
-    </div>
     <div class="row">
-        <div class="col-12">
-            <h1>Marketing</h1> 
-            <p class ="lead">This will be a blurb about what the marketing team has done for the team project</p> 
+        <div class="col-12 mb-3">
+            <h1>Marketing</h1>
         </div>
     </div>
-</div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <img src="{{ url_for("static", filename="images/marketing.jpg") }}"
+                 alt="Marketing Team Working"
+                 class="img-fluid mobile-limit-image"
+            />
+        </div>
+    </div>
 {% endblock body %}
 
