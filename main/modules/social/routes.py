@@ -48,3 +48,7 @@ def normalizing_health():
 def bias_in_news():
     return render_template("social/bias-in-the-news.html")
 
+
+@social.route("/cookies")
+def cookies():
+    return render_template("social/cookies.html")
