@@ -14,6 +14,11 @@ def learning_support():
     return render_template("advisory/learning-support.html")
 
 
+@advisory.route("/learning-support-team")
+def learning_support():
+    return render_template("advisory/learning-support-team.html")
+
+
 @advisory.route("/project-management")
 def project_management():
     return render_template("advisory/project-management.html")
