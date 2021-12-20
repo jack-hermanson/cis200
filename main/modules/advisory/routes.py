@@ -10,7 +10,7 @@ def index():
 
 
 @advisory.route("/learning-support")
-def learning_support():
+def learning_support_team():
     return render_template("advisory/learning-support.html")
 
 
