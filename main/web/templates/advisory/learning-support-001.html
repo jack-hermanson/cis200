@@ -6,10 +6,25 @@
 {% block body %}
     <div class="row">
         <div class="col-12 mb-3">
-            <div class="hero bg-light">
-                <h1 class="display-5">Learning Support Resources</h1>
-                <p class="lead mb-0">Our Learning Support team has compiled these resources for College of Business
-                    students.</p>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="{{ url_for('advisory.learning_support_001') }}" class="nav-link active">Section 001</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('advisory.learning_support_004') }}" class="nav-link">Section 004</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="display-5">Learning Support Resources</h1>
+                    <p class="lead mb-0">Our Learning Support team has compiled these resources for College of Business
+                        students.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -18,7 +33,6 @@
         <div class="col-12 col-lg-4 mb-3 mb-lg-0">
             <div class="sticky-top">
                 <div class="list-group" id="list-group">
-                    <a href="#synonym" class="list-group-item">Synonym.com</a>
                     <a href="#library" class="list-group-item">Library</a>
                     <a href="#tilt" class="list-group-item">TILT</a>
                     <a href="#writing-center" class="list-group-item">Writing Center</a>
@@ -32,19 +46,6 @@
             </div>
         </div>
         <div class="col-12 col-lg-8">
-            <div class="row" id="synonym">
-                <div class="col-12 mb-3">
-                    <h4>Synonym.com</h4>
-                    <h5>
-                        <a target="_blank" href="https://www.synonym.com/">Synonym (help with wording and language
-                            usage)</a>
-                    </h5>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/fCdOsxcwMvw"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-            </div>
             <div class="row" id="library">
                 <div class="col-12 mb-3">
                     <h4>
