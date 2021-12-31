@@ -6,10 +6,25 @@
 {% block body %}
     <div class="row">
         <div class="col-12 mb-3">
-            <div class="hero bg-light">
-                <h1 class="display-5">Learning Support Resources</h1>
-                <p class="lead mb-0">Our Learning Support team has compiled these resources for College of Business
-                    students.</p>
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="{{ url_for('advisory.learning_support_001') }}" class="nav-link active">Section 001</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('advisory.learning_support_004') }}" class="nav-link">Section 004</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="display-5">Learning Support Resources</h1>
+                    <p class="lead mb-0">Our Learning Support team has compiled these resources for College of Business
+                        students.</p>
+                </div>
             </div>
         </div>
     </div>
