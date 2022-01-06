@@ -6,7 +6,7 @@
 {% block body %}
     <div class="row">
         <div class="col-12 mb-3">
-            <h1>Marketing</h1>
+            <h1 class="mb-0">Marketing</h1>
         </div>
     </div>
 
@@ -16,6 +16,10 @@
                  alt="Marketing Team Working"
                  class="img-fluid mobile-limit-image"
             />
+        </div>
+        <div class="col-12 col-lg-6">
+            <img src="{{ url_for('static', filename='images/mkt_logos.png') }}" alt="Marketing logos"
+                 class="img-fluid mobile-limit-image">
         </div>
     </div>
 
