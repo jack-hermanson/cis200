@@ -4,67 +4,75 @@
     <meta charset="UTF-8">
     <title>CIS 200 | {% block title %}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
     <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light py-0">
-        <div class="container bg-will-gray main-nav my-lg-3">
-            <a class="navbar-brand" href="{{ url_for('main.index') }}">
-                <img id="main-logo" src="{{ url_for('static', filename='images/logo.svg') }}" alt="logo" />
-            </a>
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav class="navbar navbar-expand-lg navbar-light py-0">
+    <div class="container bg-will-gray main-nav my-lg-3">
+        <a class="navbar-brand" href="{{ url_for('main.index') }}">
+            <img id="main-logo" src="{{ url_for('static', filename='images/logo.svg') }}" alt="logo"/>
+        </a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbar">
-                <ul class="navbar-nav ms-lg-auto">
-                    <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'about' %}active{% endif %}" href="{{ url_for('about.index') }}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'economic' %}active{% endif %}" href="{{ url_for('economic.index') }}">Economic</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'environmental' %}active{% endif %}" href="{{ url_for('environmental.index') }}">Environmental</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% if active_page == 'social' %}active{% endif %}" href="{{ url_for('social.index') }}">Social</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{{ url_for('advisory.index') }}" class="nav-link {% if active_page == 'advisory' %}active{% endif %}">Meet the Teams</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="view-projects" class="btn btn-success ms-lg-2 serif mt-1" href="{{ url_for('about.projects') }}">Featured Projects</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container main-container {% if container_background %}{{ container_background }}{% else %}bg-will-gray{% endif %} {% if background_dark %}text-light{% endif %}">
-        {% block body %}
-        {% endblock body %}
-    </div>
-
-    <nav class="navbar navbar-expand py-0 navbar-light my-lg-3">
-        <div class="container bg-will-gray">
-            <ul class="navbar-nav w-100">
+        <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbar">
+            <ul class="navbar-nav ms-lg-auto">
                 <li class="nav-item">
-                    <a class="nav-link {% if active_page == 'contact' %}active{% endif %}" href="{{ url_for('contact.index') }}">Contact</a>
+                    <a class="nav-link {% if active_page == 'about' %}active{% endif %}"
+                       href="{{ url_for('about.index') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a  class="nav-link {% if active_page == 'mission' %}active{% endif %}" href="{{ url_for('about.mission_and_vision') }}">Mission and Vision</a>
+                    <a class="nav-link {% if active_page == 'economic' %}active{% endif %}"
+                       href="{{ url_for('economic.index') }}">Economic</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if learning_support %}active{% endif %}" href="{{ url_for('advisory.learning_support_001') }}">Student Resources</a>
+                    <a class="nav-link {% if active_page == 'environmental' %}active{% endif %}"
+                       href="{{ url_for('environmental.index') }}">Environmental</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if active_page == 'social' %}active{% endif %}"
+                       href="{{ url_for('social.index') }}">Social</a>
+                </li>
+                <li class="nav-item">
+                    <a id="view-projects" class="btn btn-success ms-lg-2 serif mt-1"
+                       href="{{ url_for('about.projects') }}">Featured Projects</a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <script nonce="{{ csp_nonce() }}" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-    {% block scripts %}
-    {% endblock scripts %}
+<div class="container main-container
+        {% if container_background %}{{ container_background }}{% else %}bg-will-gray{% endif %} {% if background_dark %}text-light{% endif %}">
+    {% block body %}
+    {% endblock body %}
+</div>
+
+<nav class="navbar navbar-expand py-0 navbar-light my-lg-3">
+    <div class="container bg-will-gray">
+        <ul class="navbar-nav w-100">
+            <li class="nav-item">
+                <a class="nav-link {% if active_page == 'contact' %}active{% endif %}"
+                   href="{{ url_for('contact.index') }}">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if active_page == 'mission' %}active{% endif %}"
+                   href="{{ url_for('about.mission_and_vision') }}">Mission and Vision</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {% if learning_support %}active{% endif %}"
+                   href="{{ url_for('advisory.learning_support_001') }}">Student Resources</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script nonce="{{ csp_nonce() }}" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+{% block scripts %}
+{% endblock scripts %}
 </body>
 </html>
