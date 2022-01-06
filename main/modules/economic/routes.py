@@ -32,7 +32,3 @@ def forensicact_moneylaundering():
 @economic.route("/ecosurf")
 def ecosurf():
     return render_template("economic/ecosurf.html")
-
-@economic.route("/healthyfood-discrimination")
-def healthyfood_discrimination():
-    return render_template("economic/healthyfood-discrimination.html")
