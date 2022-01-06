@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template, jsonify, request, url_for
 from time import sleep
 
+from main.utils.ContactMessage import send_message
+
 contact = Blueprint("contact", __name__, url_prefix="/contact")
 
 
@@ -32,5 +34,9 @@ def submit_contact():
         <p>Make sure you enter a <b>negative number</b>.</p>
         """
 
-    # Todo: connect with an email account to actually send the emails
+    send_message(
+        sender_email=email,
+        sender_name=name,
+        body=message
+    )
     return index(True)
