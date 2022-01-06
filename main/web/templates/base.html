@@ -24,6 +24,10 @@
                        href="{{ url_for('about.index') }}">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link {% if active_page == 'advisory' %}active{% endif %}"
+                       href="{{ url_for('advisory.index') }}">Meet the Teams</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link {% if active_page == 'economic' %}active{% endif %}"
                        href="{{ url_for('economic.index') }}">Economic</a>
                 </li>
