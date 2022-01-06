@@ -32,6 +32,9 @@
                         <a class="nav-link {% if active_page == 'social' %}active{% endif %}" href="{{ url_for('social.index') }}">Social</a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{ url_for('advisory.index') }}" class="nav-link {% if active_page == 'advisory' %}active{% endif %}">Meet the Teams</a>
+                    </li>
+                    <li class="nav-item">
                         <a id="view-projects" class="btn btn-success ms-lg-2 serif mt-1" href="{{ url_for('about.projects') }}">Featured Projects</a>
                     </li>
                 </ul>
@@ -54,7 +57,7 @@
                     <a  class="nav-link {% if active_page == 'mission' %}active{% endif %}" href="{{ url_for('about.mission_and_vision') }}">Mission and Vision</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if active_page == 'advisory' or active_page == 'sandbox' %}active{% endif %}" href="{{ url_for('advisory.index') }}">Advisory</a>
+                    <a class="nav-link {% if active_page == 'advisory' or active_page == 'sandbox' %}active{% endif %}" href="{{ url_for('advisory.learning_support_001') }}">Student Resources</a>
                 </li>
             </ul>
         </div>
