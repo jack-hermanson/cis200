@@ -41,7 +41,7 @@ def bias_in_the_news():
 
 @social.route("/normalizing-health")
 def normalizing_health():
-    return render_template("social/normalizing-heatlh.html")
+    return render_template("social/normalizing-health.html")
 
 
 @social.route("/bias-in-the-news")
