@@ -42,3 +42,7 @@ def hr():
 @advisory.route("/multimedia")
 def multimedia():
     return render_template("advisory/multimedia.html")
+
+@advisory.route("/is-team")
+def is_team():
+    return render_template("advisory/is-team.html")
