@@ -57,7 +57,7 @@
                     <a  class="nav-link {% if active_page == 'mission' %}active{% endif %}" href="{{ url_for('about.mission_and_vision') }}">Mission and Vision</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if active_page == 'advisory' or active_page == 'sandbox' %}active{% endif %}" href="{{ url_for('advisory.learning_support_001') }}">Student Resources</a>
+                    <a class="nav-link {% if learning_support %}active{% endif %}" href="{{ url_for('advisory.learning_support_001') }}">Student Resources</a>
                 </li>
             </ul>
         </div>
