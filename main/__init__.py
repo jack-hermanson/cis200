@@ -1,10 +1,12 @@
 # from flask_bcrypt import Bcrypt
 from flask import Flask
+from flask_mail import Mail
 from flask_talisman import Talisman
 
 from main.config import Config
 
 # bcrypt = Bcrypt()
+mail = Mail()
 
 
 def create_app(config_class=Config):
@@ -55,6 +57,8 @@ def create_app(config_class=Config):
 
     # set up bcrypt
     # bcrypt.init_app(app)
+    # set up mail
+    mail.init_app(app)
 
     # register blueprints/routes
     from .modules.about.routes import about

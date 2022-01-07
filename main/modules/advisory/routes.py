@@ -37,3 +37,12 @@ def marketing():
 @advisory.route("/hr")
 def hr():
     return render_template("advisory/hr.html")
+
+
+@advisory.route("/multimedia")
+def multimedia():
+    return render_template("advisory/multimedia.html")
+
+@advisory.route("/is-team")
+def is_team():
+    return render_template("advisory/is-team.html")

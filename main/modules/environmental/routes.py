@@ -27,3 +27,8 @@ def sustainable_restaurants():
 @environmental.route("/csu-sustainability")
 def csu_sustainability():
     return render_template("environmental/csu-sustainability.html")
+
+
+@environmental.route("/food-production")
+def food_production():
+    return render_template("environmental/food-production.html")
