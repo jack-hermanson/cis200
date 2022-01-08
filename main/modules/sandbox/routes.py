@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template
-
+from random import randrange
 from main.utils.ApiRequest import ApiRequest
 
 sandbox = Blueprint("sandbox", __name__, url_prefix="/sandbox")
@@ -141,6 +141,7 @@ def holidays():
         "sandbox/holidays.html",
         holidays_data=holidays_data
     )
+
 @sandbox.route("/IP")
 def IP():
     ip_data = ApiRequest("https://api.ipify.org/?format=json").make_request()
@@ -171,9 +172,12 @@ def brewing_company():
 @sandbox.route("/memes")
 def memes():
     memes_data = ApiRequest("https://api.imgflip.com/get_memes").make_request()
+    num_memes = len(memes_data["data"]["memes"])
+    random_index = randrange(0, num_memes)
     return render_template(
         "sandbox/memes.html",
-        memes_data=memes_data
+        memes_data=memes_data,
+        random_index=random_index
     )
 
 
