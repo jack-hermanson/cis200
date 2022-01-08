@@ -203,7 +203,10 @@ def coindesk():
 
 @sandbox.route("/genderize")
 def genderize():
-    genderize_data = ApiRequest("https://api.genderize.io/?name=luc").make_request()
+    random_names = [result["name"]["first"] for result in
+                    ApiRequest("https://randomuser.me/api").make_request()["results"]]
+    random_name = random_names[randrange(0, len(random_names))]
+    genderize_data = ApiRequest(f"https://api.genderize.io/?name={random_name}").make_request()
     return render_template(
         "sandbox/genderize.html",
         genderize_data=genderize_data
