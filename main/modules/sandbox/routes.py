@@ -149,15 +149,6 @@ def IP():
         "sandbox/IP.html",
         ip_data=ip_data
     )
-  
-  
-@sandbox.route("/bored-2")
-def bored2():
-    bored_data = ApiRequest("https://www.boredapi.com/api/activity").make_request()
-    return render_template(
-        "sandbox/bored-2.html",
-        bored_data=bored_data
-    )
 
 
 @sandbox.route("/brewing-company")
