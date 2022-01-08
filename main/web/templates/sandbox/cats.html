@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% set active_page = "sandbox" %}
 
-{% block title %}Kitten{% endblock title %}
+{% block title %}Cats{% endblock title %}
 
 {% block body %}
 <div class="row">
     <div class="col-12">
-        <h2>Kitten</h2>
-        <p>On this page, you can find kittens.</p>
+        <h2>Cats, by Jack Curry</h2>
+        <p>On this page, you can find cats.</p>
     </div>
 </div>
 <div class="row">
     <div class="col-12 col-lg-6">
         <div class="card">
-            <img src="{{ kitten_data[0]["url"] }}" class="card-img-top">
+            <img src="{{ cat_data[0]["url"] }}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
@@ -24,7 +24,7 @@
     </div>
     <div class="col-12 col-lg-6">
         <div class="card">
-            <img src="{{ kitten_data[0]["url"] }}" class="card-img-top">
+            <img src="{{ cat_data[0]["url"] }}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the

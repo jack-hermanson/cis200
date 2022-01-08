@@ -6,7 +6,7 @@
 {% block body %}
     <div class="row">
         <div class="col-12">
-            <h2>Memes</h2> 
+            <h2>Memes, by Brad Kerr</h2>
             <p>On this page, you can find a meme.</p> 
         </div>
     </div>
@@ -14,12 +14,12 @@
     <div class="row">
         <div class="col-12 col-lg-6">
             <div class="alert alert-secondary">
-                {{ memes_data["data"]["memes"][0]["name"]}}
+                {{ memes_data["data"]["memes"][random_index]["name"]}}
             </div>
         </div>
         <div class="col-12 col-lg-6">
             <div class="alert alert-secondary">
-                {{ memes_data["data"]["memes"][0]["url"]}}
+                <a target="_blank" href="{{ memes_data["data"]["memes"][random_index]["url"]}}">Link to meme</a>
             </div>
         </div>
     </div>
