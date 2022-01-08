@@ -182,7 +182,10 @@ def memes():
 
 @sandbox.route("/agify")
 def agify():
-    agify_data = ApiRequest("https://api.agify.io/?name=Joe").make_request()
+    random_names = [result["name"]["first"] for result in
+                    ApiRequest("https://randomuser.me/api").make_request()["results"]]
+    random_name = random_names[randrange(0, len(random_names))]
+    agify_data = ApiRequest(f"https://api.agify.io/?name={random_name}").make_request()
     return render_template(
         "sandbox/agify.html",
         agify_data=agify_data
