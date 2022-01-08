@@ -47,3 +47,43 @@ def csu_sustainability():
 @projects.route("/food-production")
 def food_production():
     return render_template("projects/food-production.html")
+
+
+@projects.route("/health-foods")
+def health_foods():
+    return render_template("projects/health-foods.html")
+
+
+@projects.route("/scamming")
+def scamming():
+    return render_template("projects/scamming.html")
+
+
+@projects.route("/worksite-wellness")
+def worksite_wellness():
+    return render_template("projects/worksite-wellness.html")
+
+
+@projects.route("/social-isolation")
+def social_isolation():
+    return render_template("projects/social-isolation.html")
+
+
+@projects.route("/information-privacy")
+def information_privacy():
+    return render_template("projects/information-privacy.html")
+
+
+@projects.route("/bias-in-the-news")
+def bias_in_the_news():
+    return render_template("projects/bias-in-the-news.html")
+
+
+@projects.route("/normalizing-health")
+def normalizing_health():
+    return render_template("projects/normalizing-health.html")
+
+
+@projects.route("/cookies")
+def cookies():
+    return render_template("projects/cookies.html")
