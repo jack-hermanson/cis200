@@ -91,10 +91,17 @@ def tv_shows():
 
 @sandbox.route("/nationality")
 def nationality():
-    nationality_data = ApiRequest("https://api.nationalize.io/?name=michael").make_request()
+    random_names = [result["name"]["first"] for result in
+                    ApiRequest("https://randomuser.me/api").make_request()["results"]]
+    random_name = random_names[randrange(0, len(random_names))]
+    nationality_data = ApiRequest(f"https://api.nationalize.io/?name={random_name}").make_request()
+    country_name = ApiRequest(f"https://restcountries.com/v3.1/alpha/{nationality_data['country'][0]['country_id']}").make_request()[
+        0]["name"]["common"]
     return render_template(
         "sandbox/nationality.html",
-        nationality_data=nationality_data
+        nationality_data=nationality_data,
+        random_name=random_name,
+        country_name=country_name
     )
 
 
@@ -115,7 +122,7 @@ def facts():
         facts_data=facts_data
     )
 
-  
+
 @sandbox.route("/cats")
 def cats():
     cat_data = ApiRequest("https://api.thecatapi.com/v1/images/search").make_request()
@@ -124,7 +131,7 @@ def cats():
         cat_data=cat_data
     )
 
-  
+
 @sandbox.route("/anime")
 def anime():
     anime_data = ApiRequest("https://api.jikan.moe/v3/search/anime?q=naruto").make_request()
@@ -141,6 +148,7 @@ def holidays():
         "sandbox/holidays.html",
         holidays_data=holidays_data
     )
+
 
 @sandbox.route("/IP")
 def IP():
@@ -189,6 +197,7 @@ def coindesk():
         coindesk_data=coindesk_data
     )
 
+
 @sandbox.route("/genderize")
 def genderize():
     genderize_data = ApiRequest("https://api.genderize.io/?name=luc").make_request()
@@ -197,9 +206,11 @@ def genderize():
         genderize_data=genderize_data
     )
 
+
 @sandbox.route("/funny")
 def funny():
-    funny_data = ApiRequest("https://v2.jokeapi.dev/joke/Programming,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart").make_request()
+    funny_data = ApiRequest(
+        "https://v2.jokeapi.dev/joke/Programming,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart").make_request()
     return render_template(
         "sandbox/funny.html",
         funny_data=funny_data
