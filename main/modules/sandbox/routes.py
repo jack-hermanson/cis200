@@ -45,10 +45,6 @@ def bored3():
 @sandbox.route("/universities")
 def universities():
     universities_data = ApiRequest("http://universities.hipolabs.com/search?country=United+States").make_request()
-    for university in universities_data:
-        name = university["name"]
-        country = university["country"]
-        domain = university["domains"][0]
     return render_template(
         "sandbox/universities.html",
         universities_data=universities_data
@@ -120,12 +116,12 @@ def facts():
     )
 
   
-@sandbox.route("/kitten")
-def kitten():
-    kitten_data = ApiRequest("https://api.thecatapi.com/v1/images/search").make_request()
+@sandbox.route("/cats")
+def cats():
+    cat_data = ApiRequest("https://api.thecatapi.com/v1/images/search").make_request()
     return render_template(
-        "sandbox/kitten.html", 
-        kitten_data = kitten_data
+        "sandbox/cats.html",
+        cat_data=cat_data
     )
 
   
