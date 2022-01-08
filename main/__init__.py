@@ -60,7 +60,6 @@ def create_app(config_class=Config):
     mail.init_app(app)
 
     # register blueprints/routes
-    from .modules.main.routes import main
     from .modules.contact.routes import contact
     from .modules.economic.routes import economic
     from .modules.environmental.routes import environmental
@@ -70,7 +69,7 @@ def create_app(config_class=Config):
     from .modules.advisory.routes import advisory
     from .modules.projects.routes import projects
 
-    for blueprint in [main, contact, economic, projects, environmental, main, sandbox, social, advisory]:
+    for blueprint in [main, contact, economic, projects, environmental, sandbox, social, advisory]:
         app.register_blueprint(blueprint)
 
     # return the app
