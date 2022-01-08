@@ -10,7 +10,6 @@ mail = Mail()
 
 
 def create_app(config_class=Config):
-
     # set up file paths for static resources
     app = Flask(
         __name__,
@@ -69,10 +68,10 @@ def create_app(config_class=Config):
     from .modules.sandbox.routes import sandbox
     from .modules.social.routes import social
     from .modules.advisory.routes import advisory
+    from .modules.projects.routes import projects
 
-    for blueprint in [main, contact, economic, environmental, main, sandbox, social, advisory]:
+    for blueprint in [main, contact, economic, projects, environmental, main, sandbox, social, advisory]:
         app.register_blueprint(blueprint)
 
     # return the app
     return app
-
