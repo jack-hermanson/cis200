@@ -6,7 +6,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
@@ -11149,8 +11148,12 @@ body .main-container {
   max-height: 140px;
 }
 
-.card-body p:not(.lead) {
+.card-body p, p:not(.font-sans-serif) {
   font-family: "Libre Baskerville", serif;
+}
+
+.font-sans-serif {
+  font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 #view-projects {
@@ -11176,16 +11179,12 @@ body .main-container {
   padding: 30px;
 }
 
-h1, .h1, .serif, .large-link {
+.serif, .large-link {
   font-family: "Libre Baskerville", serif;
 }
 
 h4, .h4 {
   font-size: 1.4em;
-}
-
-.mono, h4, .h4 {
-  font-family: "Courier Prime", monospace;
 }
 
 .large-link {
