@@ -27,3 +27,23 @@ def forensicact_moneylaundering():
 @projects.route("/ecosurf")
 def ecosurf():
     return render_template("projects/ecosurf.html")
+
+
+@projects.route("/livestock-sustainability")
+def livestock_sustainability():
+    return render_template("projects/livestock-sustainability.html")
+
+
+@projects.route("/sustainable-restaurants")
+def sustainable_restaurants():
+    return render_template("projects/sustainable-restaurants.html")
+
+
+@projects.route("/csu-sustainability")
+def csu_sustainability():
+    return render_template("projects/csu-sustainability.html")
+
+
+@projects.route("/food-production")
+def food_production():
+    return render_template("projects/food-production.html")
