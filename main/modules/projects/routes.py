@@ -1,7 +1,11 @@
-from flask import Blueprint, render_template
-
+from flask import Blueprint, render_template, redirect, url_for
 
 projects = Blueprint("projects", __name__, url_prefix="/projects")
+
+
+@projects.route("/")
+def index():
+    return redirect(url_for("main.projects"))
 
 
 @projects.route("/wells-fargo-scandal")
@@ -54,9 +58,9 @@ def health_foods():
     return render_template("projects/health-foods.html")
 
 
-@projects.route("/scamming")
-def scamming():
-    return render_template("projects/scamming.html")
+@projects.route("/online-scamming")
+def online_scamming():
+    return render_template("projects/online-scamming.html")
 
 
 @projects.route("/worksite-wellness")
