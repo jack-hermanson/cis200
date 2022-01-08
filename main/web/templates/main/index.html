@@ -1,7 +1,7 @@
 {% extends "base.html" %}
-{% set active_page = "about" %}
+{% set active_page = "main" %}
 
-{% block title %}About{% endblock title %}
+{% block title %}Information is Power{% endblock title %}
 
 {% block body %}
     <div class="row">
@@ -38,7 +38,7 @@
                 <a href="{{ url_for('advisory.index') }}">Meet the Teams</a>.
             </p>
             <span class="mt-auto">
-                <a class="large-link" href="{{ url_for('about.projects') }}">View Featured Projects &LongRightArrow;</a>
+                <a class="large-link" href="{{ url_for('main.projects') }}">View Featured Projects &LongRightArrow;</a>
             </span>
         </div>
     </div>
