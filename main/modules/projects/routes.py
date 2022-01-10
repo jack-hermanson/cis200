@@ -23,9 +23,9 @@ def affordable_housing():
     return render_template("projects/affordable-housing.html")
 
 
-@projects.route("/forensicact-moneylaundering")
-def forensicact_moneylaundering():
-    return render_template("projects/forensicact-moneylaundering.html")
+@projects.route("/identity-theft-money-laundering")
+def identity_theft_money_laundering():
+    return render_template("projects/identity-theft-money-laundering.html")
 
 
 @projects.route("/ecosurf")
