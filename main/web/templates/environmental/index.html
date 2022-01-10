@@ -6,8 +6,8 @@
 {% block body %}
     <div class="row mb-3">
         <div class="col-12">
-            <h1>Environmental</h1>
-            <p class="lead">This is the environmental page.</p>
+            <h1>Environmental Sustainability</h1>
+            <p class="lead">The projects on this page highlight environmental sustainability challenges and solutions. Businesses are focusing on reducing their carbon footprint and overall negative impact on the environment while striving to have a positive impact on environmental sustainability.</p>
         </div>
     </div>
 
@@ -17,12 +17,18 @@
                 <img src="https://images.unsplash.com/photo-1504817343863-5092a923803e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=700&q=80"
                      alt="CSU Sustainability" class="card-img-top">
                 <div class="card-body">
-                    <p>Other universities can look to CSU as a resource when striving to become more sustainable.
-                        Colorado State University is the most sustainable higher education institution in the world and
-                        was the first to receive a “platinum” rating by STARS, or the Sustainability Tracking and Rating
-                        System.</p>
-                    <a class="btn btn-success" href="{{ url_for('projects.csu_sustainability') }}">CSU
-                        Sustainability</a>
+                    <p>Colorado State University is one of the most sustainable higher education institutions in the world and was the first to receive a "platinum" rating by the Sustainability Tracking and Rating System. Other universities can look to CSU as a resource when striving to become more sustainable.</p>
+                    <a class="btn btn-success" href="{{ url_for('projects.csu_sustainability') }}">CSU Sustainability</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1619865482177-71d195df05b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=700&q=80"
+                     alt="Livestock sustainability" class="card-img-top"/>
+                <div class="card-body">
+                    <p>Livestock sustainability is a moral issue, with the management of livestock having impacts on ethical animal welfare and the global climate. To learn more about these topics, two teams interviewed Dr. Temple Grandin, a world-renowned animal scientist and professor at Colorado State University.</p>
+                    <a class="btn btn-success" href="{{ url_for('projects.livestock_sustainability') }}">Livestock Sustainability</a>
                 </div>
             </div>
         </div>
@@ -32,23 +38,8 @@
                      src="https://images.unsplash.com/photo-1558473399-6773c890474c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=700&q=80"
                      alt="Sustainable restaurants"/>
                 <div class="card-body">
-                    <p>According to 303 Magazine, “Over 40% of
-                        what we produce in the US [is] thrown away and not used. This is enough to feed everyone
-                        who lives in the US and not wasting food could end hunger tomorrow”. This is a large
-                        issue in the restaurant industry that needs to be addressed.</p>
-                    <a class="btn btn-success" href="{{ url_for('projects.sustainable_restaurants') }}">Restaurant
-                        Sustainability</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-lg-4">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1619865482177-71d195df05b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=700&q=80"
-                     alt="Livestock sustainability" class="card-img-top"/>
-                <div class="card-body">
-                    <p>Need to add description.</p>
-                    <a class="btn btn-success" href="{{ url_for('projects.livestock_sustainability') }}">Livestock
-                        Sustainability</a>
+                    <p>Over 20 billion pounds of food is wasted each year in the restaurant Industry in the United States. We are addressing the issues of food waste, sustainability, and the use of locally sourced foods within the restaurant industry by proposing and designing the concept of a "greenhouse restaurant."</p>
+                    <a class="btn btn-success" href="{{ url_for('projects.sustainable_restaurants') }}">Restaurant Sustainability</a>
                 </div>
             </div>
         </div>
@@ -59,11 +50,7 @@
                 <img src="https://images.unsplash.com/photo-1626984232613-f20f15589bee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=700&q=80"
                      alt="Food Production" class="card-img-top"/>
                 <div class="card-body">
-                    <p>Food production is putting chemicals into our rivers, sending CO<sub>2</sub> into the air we
-                        breathe, and
-                        destroying the land that our animals live on. While we
-                        need food to survive, we have to look at the long-term impacts that production is having on our
-                        environment and society as a whole.</p>
+                    <p>Food production is putting chemicals into our rivers, sending CO<sub>2</sub> into the air we breathe, and destroying the land that our animals live on. While we need food to survive, we have to look at the long-term impacts that production is having on our environment and society as a whole.</p>
                     <a class="btn btn-success" href="{{ url_for('projects.food_production') }}">Food Production</a>
                 </div>
             </div>
