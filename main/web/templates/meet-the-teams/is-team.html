@@ -1,27 +1,60 @@
 {% extends "base.html" %}
 {% set active_page = "advisory" %}
 
-{% block title %}Information Systems{% endblock title %} 
+{% block title %}Information Systems{% endblock title %}
 
 {% block body %}
-    <div class="row">
-        <div class="col-12 mb-3">
-            <h1>Information Systems</h1> 
-        </div>
+<div class="row">
+    <div class="col-12 mb-3">
+        <h1>Information Systems</h1>
     </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="card">
-                <div class="card-body three-columns larger-line-height">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deserunt illum quis. Impedit iste
-                        magni voluptatibus voluptatum. Adipisci aliquid amet architecto consectetur consequuntur debitis
-                        deserunt ea eaque esse et eum hic incidunt ipsa iste iusto libero necessitatibus nesciunt
-                        obcaecati odio officiis optio placeat quasi reiciendis rem, similique tenetur ut veniam
-                        veritatis voluptates voluptatibus! Aliquam explicabo natus tempore. Animi assumenda aut
-                        blanditiis commodi dolore eligendi error est et eveniet explicabo fugiat fugit ipsa ipsum itaque
-                        iure, magnam nam officiis provident quasi quos repellendus rerum sit vero vitae voluptatum?
-                        Aspernatur commodi debitis obcaecati perferendis praesentium provident, quis quos similique,
-                        vitae voluptates voluptatibus.</p>
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/is_team.png') }}" alt="IS Team" class="card-img-top">
+            <small class="text-muted">The IS team learned the skills needed to build this website thanks to instruction
+                provided by TA’s Jack Hermanson and Mahlet Amde. Each IS team member was responsible for building a page
+                on this website.
+            </small>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Project Summary
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div>At the beginning of the project, we downloaded and installed Python, GitHub Desktop, VS
+                                Code, and learned to work with the Scrum framework, using Trello for our team’s Scrum
+                                board. We were introduced to how to work with VS Code and GitHub Desktop–basic work,
+                                such as how to create a file in VS Code to work on and then how to connect our current
+                                work to the GitHub project so that we can all work together on it. Our TA Jack Hermanson
+                                then helped us set up a virtual environment (venv) and implemented GitHub’s
+                                branch/push-pull system to allow every individual to practice techniques in a safer
+                                sandbox version of the website.</div>
+                            <br>
+
+                            <div>We then moved on to basic HTML, learning about syntax and how to build things from
+                                scratch before moving on to more advanced HTML/CSS utilizing the Bootstrap platform.
+                                With a decent understanding of HTML/CSS, we were introduced to how Python and HTML work
+                                together by creating our own website page where we drew data from public APIs, and then
+                                formatted the page into a more responsive design. In today’s world mobile devices are
+                                becoming increasingly utilized to interact with the web, so learning how to make a page
+                                that updates based on the dimensions of the device was very beneficial.</div>
+                            <br>
+
+                            <div>After developing a familiarity with the processes and getting comfortable with our
+                                skills, we decided to move on to develop the main website page with an index that links
+                                to each project page. We utilized Python and HTML to create paths between different
+                                pages. Since most of the multimedia projects planned to create videos, we learned how to
+                                embed videos into our website pages, and set up placeholder videos to make the process
+                                easier once the multimedia teams submitted their final drafts. To ensure that website
+                                pages were consistent with the multimedia teams’ vision, we met with our respective
+                                teams and determined what information they wanted on their page.</div>
                             <br>
 
 
