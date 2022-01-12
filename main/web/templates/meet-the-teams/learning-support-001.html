@@ -5,186 +5,305 @@
 {% block title %}Learning Support{% endblock title %}
 
 {% block body %}
-    <div class="row">
-        <div class="col-12 mb-3">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a href="{{ url_for('advisory.learning_support_001') }}" class="nav-link active">Section 001</a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ url_for('advisory.learning_support_004') }}" class="nav-link">Section 004</a>
-                </li>
-            </ul>
-        </div>
+<div class="row">
+    <div class="col-12 mb-3">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a href="{{ url_for('advisory.learning_support_001') }}" class="nav-link active">Section 001</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ url_for('advisory.learning_support_004') }}" class="nav-link">Section 004</a>
+            </li>
+        </ul>
     </div>
+</div>
 
-    <div class="row">
-        <div class="col-12 mb-3">
-            <h1 class="display-5">Student Resources</h1>
-            <p class="lead mb-0">Our Learning Support team has compiled these resources for College of Business
-                students.</p>
-        </div>
+<div class="row">
+    <div class="col-12 mb-3">
+        <h1 class="display-5">Student Resources</h1>
+        <p class="lead mb-0">Our Learning Support team has compiled these resources for College of Business
+            students.</p>
     </div>
+</div>
 
-    <div class="row">
-        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
-            <div class="sticky-top">
-                <div class="list-group" id="list-group">
-                    <a href="#library" class="list-group-item">Library</a>
-                    <a href="#tilt" class="list-group-item">TILT</a>
-                    <a href="#writing-center" class="list-group-item">Writing Center</a>
-                    <a href="#cob-contact" class="list-group-item">COB General Contact Info</a>
-                    <a href="#cob-events" class="list-group-item">COB Event Center</a>
-                    <a href="#cob-research" class="list-group-item">COB Research</a>
-                    <a href="#remote-desktop" class="list-group-item">Remote Desktop (eLab)</a>
-                    <a href="#grammarly" class="list-group-item">Grammarly</a>
-                    <a href="#google-docs" class="list-group-item">Google Docs</a>
-                </div>
+<div class="row">
+    <div class="col-12 mb-3">
+        <div class="card">
+            <img class="card-img-top"
+                 src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                 alt="Learning Support"/>
+        </div>
+        <small class="text-muted">This is a list of resources suggested by student-members of the Section 001 Learning Support Team</small>
+    </div>
+</div>
+
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="false" aria-controls="collapseOne">
+                CSU Library
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h4>
+                    <a target="_blank" href="https://lib.colostate.edu/"><strong>CSU Library</strong></a>
+                </h4>
+
+                <iframe width="100%" height="515" src="https://www.youtube.com/embed/4zSGM4UWrIQ"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
-        <div class="col-12 col-lg-8">
-            <div class="row" id="library">
-                <div class="col-12 mb-3">
-                    <h4>
-                        <a target="_blank" href="https://lib.colostate.edu/">CSU Library</a>
-                    </h4>
-
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/4zSGM4UWrIQ"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-
-                    <h5 class="mt-3">CSU Research Help Database Search Options</h5>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hDM95ZSNFKA"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-
-                    <h5 class="mt-3">Evaluating Info</h5>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/TczQXKdAgik"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-
-                    <h5 class="mt-3">Locating documents</h5>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/qLaZeSbWWwA"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-
-                    <h5 class="mt-3">Organizing Sources</h5>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/kEbt1aU5yfI"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                CSU Research Help/Database Search Options
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h5 class="mt-3">CSU Research Help Database Search Options</h5>
+                <iframe width="100%" height="515" src="https://www.youtube.com/embed/hDM95ZSNFKA"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-            <div class="row" id="tilt">
-                <div class="col-12 mb-3">
-                    <h4>TILT Center</h4>
-                    <a target="_blank" href="https://tilt.colostate.edu/Learning/Tutoring/FreeAcademicSupport">Free
-                        Academic
-                        Support</a>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/qOsLnTipknA"
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Evaluating Info
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h5 class="mt-3">Evaluating Info</h5>
+                <iframe width="100%" height="515" src="https://www.youtube.com/embed/TczQXKdAgik"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Locating Documents
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h5 class="mt-3">Locating documents</h5>
+                <iframe width="100%" height="515" src="https://www.youtube.com/embed/qLaZeSbWWwA"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Organizing Sources
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <h5 class="mt-3">Organizing Sources</h5>
+                <iframe width="100%" height="515" src="https://www.youtube.com/embed/kEbt1aU5yfI"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                TILT Center
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row" id="tilt">
+                    <div class="col-12 mb-3">
+                        <h4>TILT Center</h4>
+                        <a target="_blank" href="https://tilt.colostate.edu/Learning/Tutoring/FreeAcademicSupport">Free
+                            Academic
+                            Support</a>
+                        <iframe width="100%" height="515" src="https://www.youtube.com/embed/qOsLnTipknA"
                             title="YouTube video player" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="row" id="writing-center">
-                <div class="col-12 mb-3">
-                    <h4>Writing Center Website</h4>
-                    <h5>
-                        <a target="_blank" href="https://writingcenter.colostate.edu/">Writing Center</a>
-                    </h5>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dB4YNzmck0g"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="row" id="cob-contact">
-                <div class="col-12 mb-3">
-                    <h4>COB General Contact Info</h4>
-                    <dl>
-                        <dt>Phone</dt>
-                        <dd>(970) 491-6471</dd>
-
-                        <dt>Website</dt>
-                        <dd><a target="_blank" href="https://biz.colostate.edu/about/contact-us">Online Contact</a></dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="row" id="cob-events">
-                <div class="col-12 mb-3">
-                    <h4>CSU COB Event center</h4>
-                    <h5><a target="_blank" href="https://biz.colostate.edu/events">Events</a></h5>
-                </div>
-            </div>
-            <div class="row" id="cob-research">
-                <div class="col-12 mb-3">
-                    <h4>COB Research Website</h4>
-                    <h5>
-                        <a target="_blank"
-                           href="https://colostate-marketing.sona-systems.com/Default.aspx?ReturnUrl=%2f">College of
-                            Business
-                            Research Sign-up System</a>
-                    </h5>
-                </div>
-            </div>
-            <div class="row" id="remote-desktop">
-                <div class="col-12 mb-3">
-                    <h4>eLab Remote Desktop</h4>
-                    <h5>
-                        <a target="_blank"
-                           href="https://colostate.sharepoint.com/:w:/s/COBITPublic/EYzPyZlIR7BCr-sHHLdcMg0B20cuorcTVKYzBIuJ7k6KPA?rtime=7edpBjKm2Ug">elab
-                            Remote Desktop Guide</a>
-                    </h5>
-                </div>
-            </div>
-            <div class="row" id="grammarly">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 mb-3">
-                            <h4>Grammarly (Correct grammar and overall structure)</h4>
-                            <h5>
-                                <a target="_blank" href="https://app.grammarly.com/">Adding Grammarly to Windows</a>
-                            </h5>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-6 mb-3">
-                            <h5>Install</h5>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ABViUz6ZaO4"
-                                    title="YouTube video player"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                        <div class="col-12 col-lg-6 mb-3">
-                            <h5>How to Use</h5>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/YxF7wweNyIk"
-                                    title="YouTube video player"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row" id="google-docs">
-                <div class="col-12 mb-3">
-                    <h4>Google Docs</h4>
-                    <h5>Google Docs Tutorial</h5>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/OBITNezSmLY"
-                            title="YouTube video player"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-
-                    <h5 class="mt-3">
-                        <a target="_blank"
-                           href="https://business.tutsplus.com/articles/google-docs-vs-microsoft-word--cms-35158">
-                            Google Docs or Word</a>
-                    </h5>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Writing Center Website
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row" id="writing-center">
+                    <div class="col-12 mb-3">
+                        <h4>Writing Center Website</h4>
+                        <h5>
+                            <a target="_blank" href="https://writingcenter.colostate.edu/">Writing Center</a>
+                        </h5>
+                        <iframe width="100%" height="515" src="https://www.youtube.com/embed/dB4YNzmck0g"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                COB Resources
+            </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row" id="cob-events">
+                    <div class="col-12 mb-3">
+                        <h4>CSU COB Event center</h4>
+                        <h5><a target="_blank" href="https://biz.colostate.edu/events">Events</a></h5>
+                    </div>
+                </div>
+                <div class="row" id="cob-research">
+                    <div class="col-12 mb-3">
+                        <h4>COB Research Website</h4>
+                        <h5>
+                            <a target="_blank"
+                                href="https://colostate-marketing.sona-systems.com/Default.aspx?ReturnUrl=%2f">College
+                                of
+                                Business
+                                Research Sign-up System</a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="row" id="cob-contact">
+                    <div class="col-12 mb-3">
+                        <h4>COB General Contact Info</h4>
+                        <dl>
+                            <dt>Phone</dt>
+                            <dd>(970) 491-6471</dd>
+
+                            <dt>Website</dt>
+                            <dd><a target="_blank" href="https://biz.colostate.edu/about/contact-us">Online Contact</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                eLab/Grammarly
+            </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row" id="remote-desktop">
+                    <div class="col-12 mb-3">
+                        <h4>eLab Remote Desktop</h4>
+                        <h5>
+                            <a target="_blank"
+                                href="https://colostate.sharepoint.com/:w:/s/COBITPublic/EYzPyZlIR7BCr-sHHLdcMg0B20cuorcTVKYzBIuJ7k6KPA?rtime=7edpBjKm2Ug">elab
+                                Remote Desktop Guide</a>
+                        </h5>
+                    </div>
+                </div>
+                <div class="row" id="grammarly">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <h4>Grammarly (Correct grammar and overall structure)</h4>
+                                <h5>
+                                    <a target="_blank" href="https://app.grammarly.com/">Adding Grammarly to Windows</a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-3">
+                                <h5>Install</h5>
+                                <iframe width="100%" height="515" src="https://www.youtube.com/embed/ABViUz6ZaO4"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <h5>How to Use</h5>
+                                <iframe width="100%" height="515" src="https://www.youtube.com/embed/YxF7wweNyIk"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                Google Docs
+            </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="row" id="google-docs">
+                    <div class="col-12 mb-3">
+                        <h4>Google Docs</h4>
+                        <h5>Google Docs Tutorial</h5>
+                        <iframe width="100%" height="515" src="https://www.youtube.com/embed/OBITNezSmLY"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+        
+                        <h5 class="mt-3">
+                            <a target="_blank"
+                                href="https://business.tutsplus.com/articles/google-docs-vs-microsoft-word--cms-35158">
+                                Google Docs or Word</a>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock body %}
