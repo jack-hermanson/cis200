@@ -3,13 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 
-$will-gray: #f1eeeb;
-$light-brown: #767263;
-
 body {
   .main-container {
     min-height: 60vh;
   }
+
   background-color: white;
 }
 
@@ -80,6 +78,7 @@ h4 {
   padding-bottom: 3px;
   text-decoration: none;
   border-bottom: 2px solid black;
+
   &:hover {
     border-bottom: 2px solid $link-hover-color;
   }
@@ -110,4 +109,8 @@ h6 {
   a {
     display: block;
   }
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
 }

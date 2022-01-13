@@ -1,27 +1,173 @@
 {% extends "base.html" %}
-{% set active_page = "advisory" %} 
+{% set active_page = "advisory" %}
 
-{% block title %}Information Systems{% endblock title %} 
+{% block title %}Information Systems{% endblock title %}
 
 {% block body %}
     <div class="row">
         <div class="col-12 mb-3">
-            <h1>Information Systems</h1> 
+            <h1>Information Systems</h1>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-12 mb-3">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/is_team.png') }}" alt="IS Team"
+                     class="card-img-top">
+                <div class="card-body">
+                    <p class="card-text">The IS team learned the skills needed to build this website thanks to
+                        open source information online and guidance from TAs Jack Hermanson and Mahlet Amde. Each IS
+                        team member was responsible for building
+                        a page
+                        on this website.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-12">
             <div class="card">
-                <div class="card-body three-columns larger-line-height">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa deserunt illum quis. Impedit iste
-                        magni voluptatibus voluptatum. Adipisci aliquid amet architecto consectetur consequuntur debitis
-                        deserunt ea eaque esse et eum hic incidunt ipsa iste iusto libero necessitatibus nesciunt
-                        obcaecati odio officiis optio placeat quasi reiciendis rem, similique tenetur ut veniam
-                        veritatis voluptates voluptatibus! Aliquam explicabo natus tempore. Animi assumenda aut
-                        blanditiis commodi dolore eligendi error est et eveniet explicabo fugiat fugit ipsa ipsum itaque
-                        iure, magnam nam officiis provident quasi quos repellendus rerum sit vero vitae voluptatum?
-                        Aspernatur commodi debitis obcaecati perferendis praesentium provident, quis quos similique,
-                        vitae voluptates voluptatibus.</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Project Summary
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body two-columns larger-line-height">
+                                <p>At the beginning of the project, we downloaded and installed Python, GitHub
+                                    Desktop, VS Code, and learned to work with the Scrum framework, using Trello for our
+                                    team’s Scrum board. We were introduced to how to work with VS Code and GitHub
+                                    Desktop—basic work,
+                                    such as how to create a file in VS Code to work on and then how to connect our
+                                    current work to the GitHub project so that we can all work together on it. Our TA
+                                    then helped us set up a virtual environment (venv) and implemented
+                                    GitHub’s branch/push-pull system to allow every individual to practice techniques in
+                                    a safer, isolated version of the website.
+                                </p>
+
+                                <p>We then moved on to basic HTML, learning about syntax and how to build things from
+                                    scratch before moving on to more advanced HTML/CSS utilizing the Bootstrap platform.
+                                    With a decent understanding of HTML/CSS, we were introduced to how Python and HTML
+                                    work
+                                    together by creating our own website page where we drew data from public APIs, and
+                                    then
+                                    formatted the page into a more responsive design. In today’s world mobile devices
+                                    are
+                                    becoming increasingly utilized to interact with the web, so learning how to make a
+                                    page
+                                    that updates based on the dimensions of the device was very beneficial.
+                                </p>
+
+                                <p>After developing a familiarity with the processes and getting comfortable with our
+                                    skills, we decided to move on to develop the main website page with an index that
+                                    links
+                                    to each project page. We utilized Python and HTML to create paths between different
+                                    pages. Since most of the multimedia projects planned to create videos, we learned
+                                    how to
+                                    embed videos into our website pages, and set up placeholder videos to make the
+                                    process
+                                    easier once the multimedia teams submitted their final drafts. To ensure that
+                                    website
+                                    pages were consistent with the multimedia teams’ vision, we met with our respective
+                                    teams and determined what information they wanted on their page.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                IS Team Student Feedback
+
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body larger-line-height two-columns">
+                                <p>"Overall, this website project allowed for students with zero experience in
+                                    programming/web development to develop many useful skills. Not only were students
+                                    able
+                                    to gain an understanding in the way websites are coded and developed, but we also
+                                    gained
+                                    experience in working/communicating with multiple different teams. Development of
+                                    technical skillsets are very important, but one thing that is often overlooked in
+                                    college is the development of teamwork, leadership, and other important soft skills.
+                                    This project provided students a perfect opportunity to get a feel for a real-world
+                                    multi-team environment, and I'm very grateful to have had the opportunity to be a
+                                    part
+                                    of it."
+                                </p>
+                                <p>“This semester held some valuable lessons, such as learning how to effectively
+                                    work in a team of people you don’t know, how to utilize feedback to grow rather than
+                                    to
+                                    become defensive, and how students can learn skills to create something that is
+                                    greater
+                                    than themselves—a website that will influence a large audience rather than just a
+                                    project the professor sees. The experiential learning done in the classroom through
+                                    our
+                                    website was something I’m glad we did because I learned a lot more applicable skills
+                                    rather than just textbook information. For example, I now know the basics of coding
+                                    my
+                                    own website. I never thought I would learn how to code anything, but I’m proud of
+                                    myself
+                                    for knowing how to now. I also found myself enjoying the process of coding.”
+                                </p>
+                                <p>“I felt like I was actually doing something being on the IS Team. To me, whenever I
+                                    would fall behind with my team deliverables, I would feel bad, but more so because I
+                                    felt like I was letting my team down instead of just not getting a good grade. I
+                                    honestly really feel like I was immersed into a scenario that was very close to what
+                                    the
+                                    real business world is like.”
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                The Future
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body larger-line-height two-columns">
+                                <p>The goal of this website is to be expanded on by future classes. The purpose of
+                                    future
+                                    IS Teams will be to further develop and expand on the <a
+                                            href="{{ url_for('main.mission_and_vision') }}">Mission and Vision</a> of
+                                    the
+                                    website. Even though the initial development has already been completed, there is
+                                    still
+                                    a lot of room for growth for future IS Teams. With the development of new projects
+                                    by
+                                    Multimedia teams, IS Teams will need to learn more efficient ways to organize and
+                                    consolidate past projects, as well as expand on the interactive development/design
+                                    of
+                                    the website.
+                                </p>
+                                <p>The beauty of this project is that it allows future team members to develop and
+                                    apply
+                                    their personal ideas into the website. One example is to look into web
+                                    accessibility. A
+                                    function we should
+                                    incorporate into the website would be alternative (alt) text options for the
+                                    disabled.
+                                    This would allow users to
+                                    read the text on the screen using a synthesizer or Braille display.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
