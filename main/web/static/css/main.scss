@@ -30,6 +30,15 @@ body {
 
 #main-logo {
   max-height: 140px;
+  @include media-breakpoint-down(lg) {
+    max-width: 250px;
+  }
+}
+
+.footer-nav {
+  @include media-breakpoint-down(lg) {
+    display: block;
+  }
 }
 
 .card-body p, p:not(.font-sans-serif) {
